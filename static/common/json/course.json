@@ -1,0 +1,52 @@
+[
+    {
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"uid":1
+    },
+    {
+        "course": "phys2a", 
+        "professor": "Monte Hames",
+		"uid":1
+    },
+    {
+        "course": "cogs120", 
+        "professor": "Nannette Rita",
+		"uid":1
+    },
+    {
+        "course": "cse8a", 
+        "professor": Gaston Amsden",
+		"uid":2
+    },
+    {
+        "course": "cogs120", 
+        "professor": "Thu Whicker",
+		"uid":2
+    },
+    {
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"uid":3
+    },
+    {
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"uid":4
+    },
+    {
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"uid":5
+    },
+	{
+        "course": "phys2a", 
+        "professor": "Chris Shetley",
+		"uid":4
+    },
+	{
+        "course": "CHEM6A", 
+        "professor": "Jung Wyant",
+		"uid":4
+    }
+]
