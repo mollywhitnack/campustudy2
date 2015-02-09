@@ -247,6 +247,11 @@ header .main-menu-button a.gear {
   background-image: url("../images/icons/gear-white.png");
   background-size: 28.5px 28.5px;
 }
+
+header .main-menu-button a.plus {
+  background-image: url("../images/icons/plus-white.png");
+  background-size: 28.5px 28.5px;
+}
 /* line 106, sass/_global.sass */
 header h1 {
   color: #e6f0f1;
