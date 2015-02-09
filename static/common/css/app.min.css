@@ -38,6 +38,14 @@ header .main-menu-button a.gear{background-image:url("../images/icons/gear-white
 header h1{color:#e6f0f1;display:block;position:absolute;top:18.05px;left:0;width:100%;text-align:center;z-index:1}
 
 nav.main-menu{display:block;position:absolute;top:0;left:-250px;width:250px;height:100%;padding-left:15px;padding-right:15px;background-color:#597f86;z-index:9}
+
+nav.main-menu h1{
+	display:block;
+	position:relative;
+	width:100%;font-size:200%;
+	color:black;text-decoration: none;
+	padding-top:7.5px;padding-bottom:7.5px;border-bottom:0px dotted white;
+}
 nav.main-menu a{display:block;position:relative;width:100%;font-size:185%;color:white;text-decoration:none;padding-top:7.5px;padding-bottom:7.5px;border-bottom:1px dotted white}
 nav.main-menu a:last-child{border-bottom:0}section{overflow:hidden;*zoom:1;display:block;position:relative;width:100%;padding:15px;padding-bottom:0}
 section>.content{display:block;position:relative;float:left;width:100%;padding-left:7.5px;padding-right:7.5px;padding-top:15px;padding-bottom:15px}
