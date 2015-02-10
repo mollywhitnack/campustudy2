@@ -192,9 +192,9 @@ textarea{width:100%;height:84px;border:1px solid #ccc}.form-control-toggle{-webk
 .form-control-group{display:block;position:relative;margin-bottom:15px;text-align:left}.form-control-group:last-child{padding-bottom:none}.form-control-group .form-control{display:block;position:relative;margin-bottom:7.5px}
 .form-control-group .form-control-range{width:90%;margin-left:5%}.form-control-group .form-control-range ul{display:block;position:absolute;top:21px;z-index:1}
 .form-control-group .form-control-range ul li{display:block;position:absolute;width:1px;height:9px;background-color:#ccc;overflow:visible;z-index:1}.form-control-group .form-control-range ul li span{display:block;position:absolute;font-size:90%}
-
+a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png) ; background-size:120px 120px;right:0;top:0;width:62px;}
 .settings .form-control-group{float:right}
-
+.form-setting-delete a{display:block;position:relative;float:left;height:100%;line-height:26.25px;padding-top:7.5px;padding-bottom:7.5px;padding-left:52.5px;text-align:left;text-transform:uppercase;color:#597f86;background-image:url(../images/icons/tile-closeloss.png);background-position:left center;background-repeat:no-repeat;background-size:37.5px 37.5px}
 .form-navigation-buttons a{display:block;position:relative;float:left;height:100%;line-height:26.25px;padding-top:7.5px;padding-bottom:7.5px;padding-left:52.5px;text-align:left;text-transform:uppercase;color:#597f86;background-image:url(../images/icons/form-button-previous.png);background-position:left center;background-repeat:no-repeat;background-size:37.5px 37.5px}
 .form-navigation-buttons a.next,.form-navigation-buttons a.finish{border-left:1px dotted #e0e0e0;text-align:right;padding-right:52.5px;padding-left:0;background-position:right center}
 .form-navigation-buttons a.next.span-100,.form-navigation-buttons a.finish.span-100{border-left:none}.form-navigation-buttons a.next{background-image:url(../images/icons/form-button-next.png)}

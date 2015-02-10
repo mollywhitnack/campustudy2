@@ -6,6 +6,7 @@
 		"location": "Geisel Library",
 		"timeleft":	360,
 		"howto": "I am at 2nd floor at corner 01",
+		"GPS":0,
 		"uid":1
     },
     {
@@ -15,6 +16,7 @@
 		"location": "Geisel Library",
 		"timeleft":	160,
 		"howto": "I am at 2nd floor at corner 02",
+		"GPS":0,
 		"uid":1
     },
     {
@@ -24,6 +26,7 @@
 		"location": "Geisel Library",
 		"timeleft":	72,
 		"howto": "I am at 2nd floor at corner 04",
+		"GPS":0,
 		"uid":1
     },
     {
@@ -33,6 +36,7 @@
 		"location": "Geisel Library",
 		"timeleft":	170,
 		"howto": "I am at 2nd floor at corner",
+		"GPS":0,
 		"uid":2
     },
     {
@@ -42,6 +46,7 @@
 		"location": "Price Center",
 		"timeleft":	89,
 		"howto": "in front of BK",
+		"GPS":0,
 		"uid":2
     },
     {
@@ -51,6 +56,7 @@
 		"location": "CSE Basement",
 		"timeleft":	159,
 		"howto": "B250",
+		"GPS":0,
 		"uid":3
     },
     {
@@ -60,6 +66,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"GPS":0,
 		"uid":4
     },
     {
@@ -69,6 +76,7 @@
 		"location": "Warren",
 		"timeleft":	194,
 		"howto": "near XXX",
+		"GPS":0,
 		"uid":5
     },
 	{
@@ -78,6 +86,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"GPS":0,
 		"uid":4
     },
 	{
@@ -87,6 +96,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"GPS":0,
 		"uid":4
     }
 ]
