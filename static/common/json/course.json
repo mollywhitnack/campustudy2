@@ -1,4 +1,4 @@
-[
+{"course" :[
     {
         "course": "cse8a", 
         "professor": "Gaston Amsden",
@@ -50,3 +50,4 @@
 		"uid":4
     }
 ]
+}
