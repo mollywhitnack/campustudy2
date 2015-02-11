@@ -10,5 +10,5 @@ exports.view = function(req, res) {
 		// if()
 	// });
 	res.render('detailview1',sessions);
-	console.log(course);
+	console.log(sessions);
 }
