@@ -6,8 +6,10 @@
 		"location": "Geisel Library",
 		"timeleft":	360,
 		"howto": "I am at 2nd floor at corner 01",
-		"uid":1
-    },
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+	},
     {
         "name": "Tayna Giambrone",
         "course": "phys2a", 
@@ -15,7 +17,9 @@
 		"location": "Geisel Library",
 		"timeleft":	160,
 		"howto": "I am at 2nd floor at corner 02",
-		"uid":1
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
     },
     {
         "name": "Tayna Giambrone",
@@ -24,7 +28,9 @@
 		"location": "Geisel Library",
 		"timeleft":	72,
 		"howto": "I am at 2nd floor at corner 04",
-		"uid":1
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
     },
     {
         "name": "Leisha Krob",
@@ -33,7 +39,9 @@
 		"location": "Geisel Library",
 		"timeleft":	170,
 		"howto": "I am at 2nd floor at corner",
-		"uid":2
+		"GPS":0,
+		"uid":2,
+		"phone": 123456789
     },
     {
         "name": "Leisha Krob",
@@ -42,7 +50,9 @@
 		"location": "Price Center",
 		"timeleft":	89,
 		"howto": "in front of BK",
-		"uid":2
+		"GPS":0,
+		"uid":2,
+		"phone": 123456789
     },
     {
         "name": "Marylouise Wehner",
@@ -51,7 +61,9 @@
 		"location": "CSE Basement",
 		"timeleft":	159,
 		"howto": "B250",
-		"uid":3
+		"GPS":0,
+		"uid":3,
+		"phone": 123456789
     },
     {
         "name": "Becki Howerton",
@@ -60,7 +72,9 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
-		"uid":4
+		"GPS":0,
+		"uid":4,
+		"phone": 123456789
     },
     {
         "name": "Classie Donlin",
@@ -69,7 +83,9 @@
 		"location": "Warren",
 		"timeleft":	194,
 		"howto": "near XXX",
-		"uid":5
+		"GPS":0,
+		"uid":5,
+		"phone": 123456789
     },
 	{
         "name": "Becki Howerton",
@@ -78,6 +94,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"GPS":0,
 		"uid":4
     },
 	{
@@ -87,6 +104,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"GPS":0,
 		"uid":4
     }
 ]
