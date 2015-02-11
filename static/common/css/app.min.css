@@ -205,18 +205,26 @@ textarea{width:100%;height:84px;border:1px solid #ccc}.form-control-toggle{-webk
 a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png) ; background-size:120px 120px;right:0;top:0;width:62px;}
 .settings .form-control-group{float:right}
 .form-setting-delete a{display:block;position:relative;float:left;height:100%;line-height:26.25px;padding-top:7.5px;padding-bottom:7.5px;padding-left:52.5px;text-align:left;text-transform:uppercase;color:#597f86;background-image:url(../images/icons/tile-closeloss.png);background-position:left center;background-repeat:no-repeat;background-size:37.5px 37.5px}
+
 .form-navigation-buttons a{display:block;position:relative;float:left;height:100%;line-height:26.25px;padding-top:7.5px;padding-bottom:7.5px;padding-left:52.5px;text-align:left;text-transform:uppercase;color:#597f86;background-image:url(../images/icons/form-button-previous.png);background-position:left center;background-repeat:no-repeat;background-size:37.5px 37.5px}
 .form-navigation-buttons a.next,.form-navigation-buttons a.finish{border-left:1px dotted #e0e0e0;text-align:right;padding-right:52.5px;padding-left:0;background-position:right center}
-.form-navigation-buttons a.next.span-100,.form-navigation-buttons a.finish.span-100{border-left:none}.form-navigation-buttons a.next{background-image:url(../images/icons/form-button-next.png)}
-.form-navigation-buttons a.finish{background-image:url(../images/icons/form-button-finish.png)}.progress-dotted{display:block;position:relative;width:100%;height:31.5px;margin-bottom:15px}
-.progress-dotted .progress-dotted-bg{display:block;position:absolute;top:4.5px;left:0;width:100%;height:1px;background-color:#ddd;z-index:1}.progress-dotted .progress-dotted-label{display:block;position:absolute;top:17.5px}
-.progress-dotted ul{display:block;position:relative;height:10px;width:100%;z-index:2}.progress-dotted ul li{-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;display:block;position:absolute;top:0;left:0;height:10px;width:10px;overflow:visible;background-color:#ddd}
-.progress-dotted ul li.on{background-color:black}.progress-bar{display:block;position:relative;width:100%;height:10px;background:#ccc;margin-bottom:15px}
+.form-navigation-buttons a.next.span-100,.form-navigation-buttons a.finish.span-100{border-left:none}
+.form-navigation-buttons a.next{background-image:url(../images/icons/form-button-next.png)}
+.form-navigation-buttons a.finish{background-image:url(../images/icons/form-button-finish.png)}
+.progress-dotted{display:block;position:relative;width:100%;height:31.5px;margin-bottom:15px}
+.progress-dotted .progress-dotted-bg{display:block;position:absolute;top:4.5px;left:0;width:100%;height:1px;background-color:#ddd;z-index:1}
+.progress-dotted .progress-dotted-label{display:block;position:absolute;top:17.5px}
+.progress-dotted ul{display:block;position:relative;height:10px;width:100%;z-index:2}
+.progress-dotted ul li{-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;display:block;position:absolute;top:0;left:0;height:10px;width:10px;overflow:visible;background-color:#ddd}
+.progress-dotted ul li.on{background-color:black}
+.progress-bar{display:block;position:relative;width:100%;height:10px;background:#ccc;margin-bottom:15px}
 .progress-bar-fill{display:block;position:absolute;top:0;left:0;height:10px;background-color:black}
+
 
 .data-capture-buttons a{-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#597f86),color-stop(100%,#7ba8b0));background-image:-webkit-linear-gradient(top,#597f86,#7ba8b0);background-image:-moz-linear-gradient(top,#597f86,#7ba8b0);background-image:-o-linear-gradient(top,#597f86,#7ba8b0);background-image:linear-gradient(top,#597f86,#7ba8b0);display:block;position:relative;float:left;height:100%;line-height:45px;text-align:center;color:white;text-transform:uppercase;font-size:90%;font-weight:bolder}
 .data-capture-buttons.one-buttons a{width:100%}
-.data-capture-buttons.one-buttons .mysessions a{margin-top:120%;}
+.data-capture-buttons.one-buttons .mysessions a{ margin-top: 120%;}
+
 .data-capture-buttons.two-buttons a{width:48%}
 .data-capture-buttons.two-buttons a:first-child{margin-right:1%}
 .data-capture-buttons.two-buttons a:last-child{float:right;margin-left:1%}
@@ -259,7 +267,7 @@ button.Zebra_DatePicker_Icon_Disabled{background-image:url("calendar-disabled.pn
 .graph label{position:absolute}.legend-text{font-weight:bolder}.donut-center-text{font-size:185%;font-weight:bolder;fill:#666}.graph-line{fill:none;stroke:#ccc;stroke-width:4;shape-rendering:crispEdges}
 .max-text-title,.min-text-title{font-weight:bolder}.max-text,.min-text{fill:#7ba8b0}
 
-.index
+.splash
 {
 	background-image:-webkit-gradient(radial,100px 100px,0,100px 100px,300,color-stop(3.33333%,#597f86),color-stop(100%,#7ba8b0));
 	background-image:-webkit-radial-gradient(100px 100px,#597f86 10px,#7ba8b0 300px);
@@ -268,11 +276,11 @@ button.Zebra_DatePicker_Icon_Disabled{background-image:url("calendar-disabled.pn
 	background-image:radial-gradient(100px 100px,#597f86 10px,#7ba8b0 300px)
 }
 
-.index .app-content{position:absolute;width:100%;height:100%;padding-top:0}
-.index .app-content .splash-screen-wrapper{display:block;position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:200px;margin:auto}
-.index .app-content .splash-screen-wrapper .content{display:block;position:relative;width:100%;height:100%;text-align:center;color:white}
-.index .app-content .splash-screen-wrapper .content .login{display:block;position:relative;width:100%;height:60%;text-align:center;color:white; background-color: none; padding-left: 35%; padding-top: 10%}
-.index .app-content .splash-screen-wrapper .content .login .facebookbutton{display:block;position:relative;width:50%;height:50%;float: center; text-align:center;color:white; background-color: black; padding: 3%;}
+.splash .app-content{position:absolute;width:100%;height:100%;padding-top:0}
+.splash .app-content .splash-screen-wrapper{display:block;position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:200px;margin:auto}
+.splash .app-content .splash-screen-wrapper .content{display:block;position:relative;width:100%;height:100%;text-align:center;color:white}
+.splash .app-content .splash-screen-wrapper .content .login{display:block;position:relative;width:100%;height:60%;text-align:center;color:white; background-color: none; padding-left: 35%; padding-top: 10%}
+.splash .app-content .splash-screen-wrapper .content .login .facebookbutton{display:block;position:relative;width:50%;height:50%;float: center; text-align:center;color:white; background-color: black; padding: 3%;}
 
 
 .week-planner{display:block;position:relative;width:100%}
