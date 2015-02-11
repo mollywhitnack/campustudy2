@@ -7,8 +7,9 @@
 		"timeleft":	360,
 		"howto": "I am at 2nd floor at corner 01",
 		"GPS":0,
-		"uid":1
-    },
+		"uid":1,
+		"phone": 123456789
+	},
     {
         "name": "Tayna Giambrone",
         "course": "phys2a", 
@@ -17,7 +18,8 @@
 		"timeleft":	160,
 		"howto": "I am at 2nd floor at corner 02",
 		"GPS":0,
-		"uid":1
+		"uid":1,
+		"phone": 123456789
     },
     {
         "name": "Tayna Giambrone",
@@ -27,7 +29,8 @@
 		"timeleft":	72,
 		"howto": "I am at 2nd floor at corner 04",
 		"GPS":0,
-		"uid":1
+		"uid":1,
+		"phone": 123456789
     },
     {
         "name": "Leisha Krob",
@@ -37,7 +40,8 @@
 		"timeleft":	170,
 		"howto": "I am at 2nd floor at corner",
 		"GPS":0,
-		"uid":2
+		"uid":2,
+		"phone": 123456789
     },
     {
         "name": "Leisha Krob",
@@ -47,7 +51,8 @@
 		"timeleft":	89,
 		"howto": "in front of BK",
 		"GPS":0,
-		"uid":2
+		"uid":2,
+		"phone": 123456789
     },
     {
         "name": "Marylouise Wehner",
@@ -57,7 +62,8 @@
 		"timeleft":	159,
 		"howto": "B250",
 		"GPS":0,
-		"uid":3
+		"uid":3,
+		"phone": 123456789
     },
     {
         "name": "Becki Howerton",
@@ -67,7 +73,8 @@
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
 		"GPS":0,
-		"uid":4
+		"uid":4,
+		"phone": 123456789
     },
     {
         "name": "Classie Donlin",
@@ -77,7 +84,8 @@
 		"timeleft":	194,
 		"howto": "near XXX",
 		"GPS":0,
-		"uid":5
+		"uid":5,
+		"phone": 123456789
     },
 	{
         "name": "Becki Howerton",
