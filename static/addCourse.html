@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>Standard Data Input Template</title>
+<title>Add Course</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1,	minimum-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="./common/css/app.min.css">
@@ -25,8 +25,7 @@
 </nav><!--#main-menu-->
 
 <header>
-<div class="main-menu-button main-menu-button-left"><a class="left-arrow" href="Settings.html">&nbsp;</a></div>
-<h1>Inspection</h1>
+<h1>Add A Course</h1>
 </header>
 
 <div class="app-content">
@@ -35,7 +34,8 @@
 
 <section class="border-bottom">
 	<div class="content">
-		<h3>Hotel Name</h3>
+		<h3>Course ID</h3>
+		<p>(ex. CSE 170)</p>
 		<div class="form-control-group">
 			<div class="form-control form-control-text">
 				<input type="text" name="text">
@@ -46,85 +46,20 @@
 
 <section class="border-bottom">
 	<div class="content">
-		<h3>Inspection Date</h3>
+		<h3>Professor</h3>
+		<p>Last name only (ex. Klemmer)</p>
 		<div class="form-control-group">
-			<div class="form-control form-control-date">
-				<input type="date" name="date">
+			<div class="form-control form-control-text">
+				<input type="text" name="text">
 			</div>
 		</div>
 	</div><!--.content-->
 </section>
 
-<section class="border-bottom">
+<section class="data-capture-buttons two-buttons">
 	<div class="content">
-		<h3>Passed</h3>
-		<div class="form-control-group">
-			<div class="form-control form-control-toggle" data-on-label="yes" data-off-label="no">
-				<input type="checkbox" name="toggle">
-			</div>
-		</div>
-	</div><!--.content-->
-</section>
-
-<section class="border-bottom">
-	<div class="content">
-		<h3>Remarks</h3>
-		<div class="form-control-group">
-			<div class="form-control form-control-textarea">
-				<textarea></textarea>
-			</div>
-		</div>
-	</div><!--.content-->
-</section>
-
-<section class="border-bottom">
-	<div class="content">
-		<h3>Room Types</h3>
-		<div class="span-50 form-control-group">
-			<div class="form-control form-control-checkbox">
-			<input type="checkbox"><label>Single</label>
-			</div>
-			<div class="form-control form-control-checkbox">
-			<input type="checkbox"><label>Double</label>
-			</div>
-		</div>
-		<div class="span-50 form-control-group">
-			<div class="form-control form-control-checkbox">
-			<input type="checkbox"><label>Suite</label>
-			</div>
-		</div>
-	</div><!--.content-->
-</section>
-
-<section class="border-bottom">
-	<div class="content">
-		<h3>Hotel Type</h3>
-		<div class="form-control-group">
-			<div class="form-control form-control-select">
-				<select>
-					<option>Owner Operated</option>
-					<option>Co-op</option>
-					<option>Pure Anarchy</option>
-				</select>
-			</div>
-		</div>
-	</div><!--.content-->
-</section>
-
-<section >
-	<div class="content">
-		<h3>Number of Rooms</h3>
-		<div class="form-control-group">
-			<div class="form-control form-control-number">
-			<input type="number" >
-			</div>
-		</div>
-	</div><!--.content-->
-</section>
-
-<section class="data-capture-buttons one-buttons">
-	<div class="content">
-    	<a href="#">submit</a>
+		<a href="Settings.html">cancel</a>
+    	<a href="Settings.html">submit</a>
     </div>
 </section><!--.data-capture-buttons-->
 
