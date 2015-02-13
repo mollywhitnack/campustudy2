@@ -98,7 +98,8 @@ div.tabbed-list-view-nav .tabbed-list-view-nav-arrow{display:block;position:abso
 
 ul.tabbed-list-view{-webkit-transition-property:left;-moz-transition-property:left;-o-transition-property:
 	left;transition-property:left;-webkit-transition-duration:.2s;-moz-transition-duration:.2s;-o-transition-duration:.2s;
-	transition-duration:.2s;-webkit-transition-timing-function:linear;-moz-transition-timing-function:linear;-o-transition-timing-function:linear;transition-timing-function:linear;display:block;position:relative;top:15px;left:0;width:100%;height:100%;overflow:visible;z-index:5}
+	transition-duration:.2s;-webkit-transition-timing-function:linear;-moz-transition-timing-function:linear;-o-transition-timing-function:linear;transition-timing-function:linear;
+	display:block;position:relative;top:15px;left:0;width:100%;height:100%;overflow:visible;z-index:5}
 ul.tabbed-list-view>li{display:block;position:absolute;top:0;left:0;width:100%;height:100%}
 ul.tabbed-list-view.slide-1{left:-100%}
 ul.tabbed-list-view.slide-2{left:-200%}
@@ -121,6 +122,10 @@ ul.list-view li.swiped .thumb-2{left:57.5px}
 ul.list-view li.swiped .thumb-3{left:115px}
 ul.list-view.large-padding>li{padding-top:15px;padding-bottom:15px}
 ul.list-view.large-padding>li:last-child{padding-bottom:0}
+
+ul.list-view.medium-padding>li{padding-top:5px;padding-bottom:15px}
+ul.list-view.medium-padding>li:last-child{padding-bottom:0}
+
 ul.list-view.left-thumbs>li>.content{min-height:50px;padding-left:25px}
 ul.list-view.right-one-icons>li>.content{padding-right:27.5px}
 ul.list-view.right-two-icons>li>.content{padding-right:47.5px}
