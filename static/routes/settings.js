@@ -25,5 +25,5 @@ exports.del = function(req,res) {
 		}
 	}
 
-	res.render('deleteCourse', data);
+	res.render('settings', data);
 }
