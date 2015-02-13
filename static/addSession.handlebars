@@ -25,7 +25,7 @@
 </nav><!--#main-menu-->
 
 <header>
-
+<div class="main-menu-button main-menu-button-left"><a class="left-arrow" href = "sessions">&nbsp;</a></div>
 <h1>Create A Session</h1>
 </header>
 
@@ -38,7 +38,8 @@
 		<h3>Course</h3>
 		<div class="form-control-group">
 			<div class="form-control form-control-select">
-				<select>
+				<select name = "course">
+					<option></option>
 					<option>CSE 170</option>
 					<option>PHYS 2A</option>
 					<option>*this needs to link to database*</option>
@@ -55,7 +56,7 @@
 		<p>(ex. Geisel 2nd Floor West)</p>
 		<div class="form-control-group">
 			<div class="form-control form-control-text">
-				<input type="text" name="text">
+				<input type="text" name="location">
 			</div>
 		</div>
 	</div><!--.content-->
@@ -68,7 +69,7 @@
 		<p>(ex. to left of Research Assistance Desk, wearing a red shirt and a hoodie)</p>
 		<div class="form-control-group">
 			<div class="form-control form-control-textarea">
-				<textarea></textarea>
+				<textarea name = "howto"></textarea>
 			</div>
 		</div>
 	</div><!--.content-->
@@ -81,7 +82,7 @@
 		<p>(ex. Working on Assignment 2. Stuck on part 3)</p>
 		<div class="form-control-group">
 			<div class="form-control form-control-textarea">
-				<textarea></textarea>
+				<textarea name = "extra"></textarea>
 			</div>
 		</div>
 	</div><!--.content-->
@@ -93,7 +94,7 @@
 		<p><i>*optional</i></p>
 		<div class="form-control-group">
 			<div class="form-control form-control-text">
-				<input type="text" name="text">
+				<input type="text" name="phone">
 			</div>
 		</div>
 	</div><!--.content-->
@@ -105,13 +106,13 @@
 		<div class="form-control-group">
 			Hours
 			<div class="form-control form-control-number">
-			<input type="number" >
+			<input type="number" name="hours">
 			</div>
 		</div>
 		<div class="form-control-group">
 			Minutes
 			<div class="form-control form-control-number">
-			<input type="number" >
+			<input type="number" name="mins" >
 			</div>
 		</div>
 	</div><!--.content-->
@@ -120,7 +121,7 @@
 <section class="data-capture-buttons two-buttons">
 	<div class="content">
     	<a href="/sessions">cancel</a>
-    	<a href="/sessions">submit</a>
+    	<input type="submit" value="save"></input>
     </div>
 </section><!--.data-capture-buttons-->
 

@@ -1,4 +1,4 @@
-var sessions = require("../common/json/sessions.json");
+var sessions = require("../common/json/data.json");
 
 exports.view = function(req, res) { 
 	// Your code goes here
@@ -9,6 +9,32 @@ exports.view = function(req, res) {
 	// jQuery.each(course,function(){
 		// if()
 	// });
+    var course = req.query.course;
+    var location = req.query.location;
+    var howto= req.query.howto;
+    var hours = req.query.hours;
+    var mins = req.query.mins;
+    hours = hours*60
+    hours = hours + mins;
+    var extra = req.query.extra;
+    var phone = req.query.phone;
+    if(course != null) {
+    var newSession = {
+	
+        "course": course, 
+		"location": location,
+		"timeleft":	hours,
+		"howto": howto,
+		"extra": extra,
+		"phone": phone
+    };
+
+    sessions["mysessions"].push(newSession);
+
 	res.render('addSession',sessions);
-	console.log(sessions);
+	console.log(newSession);
+
+}
+		res.render('addSession',sessions);
+
 }

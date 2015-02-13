@@ -1,4 +1,4 @@
-var courses = require("../common/json/course.json");
+var courses = require("../common/json/data.json");
 
 exports.view = function(req, res) { 
 	// Your code goes here
@@ -11,13 +11,16 @@ exports.view = function(req, res) {
 	// });
     var course = req.query.course;
     var professor = req.query.professor;
+    if(course != null) {
     var newCourse = {
 			"course": course,
 			"professor": professor,		
     };
 
-    courses["course"].push(newCourse);
-	res.render('addCourse',courses);
+    courses["owner"].push(newCourse);
 
 	console.log(newCourse);
+  }
+
+  res.render('addCourse',courses);
 }
