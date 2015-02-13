@@ -14,7 +14,7 @@ exports.view = function(req, res) {
     if(course != null) {
     var newCourse = {
 			"course": course,
-			"professor": professor,		
+			"professor": professor,	
     };
 
     courses["owner"].push(newCourse);

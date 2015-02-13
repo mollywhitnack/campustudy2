@@ -1,4 +1,5 @@
-{"sessions":[
+{
+	"sessions":[
     {
         "name": "Tayna Giambrone",
         "course": "cse8a", 
@@ -117,7 +118,7 @@
 		"GPS":0,
 		"uid":4
     }
-],
+	],
 	
 	"mysessions":[
     {
@@ -132,9 +133,10 @@
 		"phone": 123456789
 	}
 	],
+
 	"owner" :[
     {
-        "course": "cse8a", 
+        "course": "cse12", 
         "professor": "Gaston Amsden"
 
     },
@@ -146,6 +148,84 @@
         "course": "cogs120", 
         "professor": "Nannette Rita"
     }
+    ],
+
+     "cse12":[
+    {
+    	"name": "Tayna Giambrone",
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	360,
+		"howto": "I am at 2nd floor at corner 01",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+    },
+
+    {   "name": "Leisha Krob",
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	170,
+		"howto": "I am at 2nd floor at corner",
+		"GPS":0,
+		"uid":2,
+		"phone": 123456789
+	}
+
+    ],
+
+    "phys2a":[
+    {
+    	"name": "Tayna Giambrone",
+        "course": "phys2a", 
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	360,
+		"howto": "I am at 2nd floor at corner 01",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+    },
+    {
+        "name": "Leisha Krob",
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	170,
+		"howto": "I am at 2nd floor at corner",
+		"extra": "lalalala",
+		"GPS":0,
+		"uid":2,
+		"phone": 123456789
+	}
+    ],
+
+    "cogs120":[
+    {
+    	"name": "Tayna Giambrone",
+        "course": "phys2a", 
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	360,
+		"howto": "I am at 2nd floor at corner 01",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+    },
+    {
+        "name": "Leisha Krob",
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	170,
+		"howto": "I am at 2nd floor at corner",
+		"extra": "lalalala",
+		"GPS":0,
+		"uid":2,
+		"phone": 123456789}
+
     ]
 
 }
+
+
+
+
