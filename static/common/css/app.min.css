@@ -182,8 +182,8 @@ ul.list-view-tasks li.overdue.complete .date{color:#ccc}
 
 
 
-.detail-view-header.left-thumb .content{min-height:65px;padding-left:45%; background-color: white;}
-.detail-view-header.left-thumb .content a{padding: 20px; border-style: solid; color: white; background-color: black; border-style: solid; }
+.detail-view-header.left-thumb .content{min-height:45px;padding-left:1.8%; background-color: white;}
+.detail-view-header.left-thumb .content a{padding: 15px; border-style: solid; color: white; background-color: gray; border-style: solid; }
 
 
 .detail-view-header.detail-view-header-about{text-align:center}
