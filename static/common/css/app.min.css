@@ -40,6 +40,8 @@ header .main-menu-button a.menu{background-image:url("../images/icons/menu.png")
 header .main-menu-button a.left-arrow{background-image:url("../images/icons/left-arrow-white.png");background-size:19.5px 28.5px}
 header .main-menu-button a.gear{background-image:url("../images/icons/gear-white.png");background-size:28.5px 28.5px}
 header .main-menu-button a.plus{background-image:url("../images/icons/plus-white.png");background-size:28.5px 28.5px}
+header .main-menu-button a.course{background-image:url("../images/icons/course.png");background-size:28.5px 28.5px}
+
 header h1{color:#e6f0f1;display:block;position:absolute;top:18.05px;left:0;width:100%;text-align:center;z-index:1}
 
 nav.main-menu{display:block;position:absolute;top:0;left:-250px;width:250px;height:100%;padding-left:15px;padding-right:15px;background-color:#597f86;z-index:9}
