@@ -13,7 +13,7 @@ exports.view = function(req, res) {
 	//console.log(data);
 	//console.log("here");
 	console.log(course);
-	res.render('settings',data);
+	res.render('Settings',data);
 }
 
 exports.del = function(req,res) {
