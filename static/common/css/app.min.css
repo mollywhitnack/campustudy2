@@ -215,9 +215,10 @@ textarea{width:100%;height:84px;border:1px solid #ccc}.form-control-toggle{-webk
 a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png); background-size:120px 120px;right:0;top:0;width:62px;}
 .settings .form-control-group{float:right}
 
-.form-setting-delete a{display:block;position:relative;float:left;height:100%;
+.form-setting-delete a{display:block;position:relative;float:right;height:100%;
 	line-height:26.25px;padding-top:7.5px;padding-bottom:7.5px;padding-left:52.5px;
 	text-align:left;text-transform:uppercase;color:#597f86;
+	background-image:url(../images/icons/tile-closeloss.png);
 	background-repeat:no-repeat;background-size:37.5px 37.5px}
 
 .form-navigation-buttons a{display:block;position:relative;float:left;height:100%;line-height:26.25px;padding-top:7.5px;padding-bottom:7.5px;padding-left:52.5px;text-align:left;text-transform:uppercase;color:#597f86;background-image:url(../images/icons/form-button-previous.png);background-position:left center;background-repeat:no-repeat;background-size:37.5px 37.5px}
