@@ -212,7 +212,7 @@ textarea{width:100%;height:84px;border:1px solid #ccc}.form-control-toggle{-webk
 .form-control-group .form-control-range ul{display:block;position:absolute;top:21px;z-index:1}
 .form-control-group .form-control-range ul li{display:block;position:absolute;width:1px;height:9px;background-color:#ccc;overflow:visible;z-index:1}
 .form-control-group .form-control-range ul li span{display:block;position:absolute;font-size:90%}
-a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png) ; background-size:120px 120px;right:0;top:0;width:62px;}
+a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png); background-size:120px 120px;right:0;top:0;width:62px;}
 .settings .form-control-group{float:right}
 
 .form-setting-delete a{display:block;position:relative;float:left;height:100%;
