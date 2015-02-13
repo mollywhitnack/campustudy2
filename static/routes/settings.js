@@ -17,7 +17,7 @@ exports.view = function(req, res) {
 }
 
 exports.del = function(req,res) {
-	var courseName = req.params.name;
+	var courseName = $(this).course;
 //	console.log("Hi Guys!!!!");
 	for(var i = 0; i < data.owner.length; i++){
 		if( data.owner[i].course == courseName){
