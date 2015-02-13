@@ -24,8 +24,8 @@ exports.del = function(req,res) {
 			delete data.owner[i];
 		}
 	}
-	res.render('../../settings', data);
-	res.end();
+	res.render('deleteCourse', data);
+	//res.end();
 	//res.render('settings',data);
 	//window.location.replace("../../settings");
 }
