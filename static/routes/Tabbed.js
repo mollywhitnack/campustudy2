@@ -10,11 +10,11 @@ exports.view = function(req, res) {
 	// jQuery.each(course,function(){
 		// if()
 	// });
-	var data3 = {'owner': []};
-	for(var i = 0; i < 3; i++){
-		data3.owner.push(course.owner[i]);
-	}
-	res.render('Tabbed',data3);
+	// var data3 = {'owner': []};
+	// for(var i = 0; i < 3; i++){
+		// data3.owner.push(course.owner[i]);
+	// }
+	res.render('Tabbed',course);
 	console.log(course);
 
 }
