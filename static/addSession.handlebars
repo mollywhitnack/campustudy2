@@ -39,10 +39,10 @@
 		<div class="form-control-group">
 			<div class="form-control form-control-select">
 				<select name = "course">
-					<option></option>
-					<option>CSE 170</option>
-					<option>PHYS 2A</option>
-					<option>*this needs to link to database*</option>
+					{{#each owner}}
+					<option>{{course}}</option>
+					
+					{{/each}}
 				</select>
 			</div>
 		</div>

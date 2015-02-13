@@ -14,8 +14,8 @@ exports.view = function(req, res) {
     var howto= req.query.howto;
     var hours = req.query.hours;
     var mins = req.query.mins;
-    hours = hours*60
-    hours = hours + mins;
+    hours = hours*60 ;
+    hours = parseInt(hours) + parseInt(mins);
     var extra = req.query.extra;
     var phone = req.query.phone;
     if(course != null) {
@@ -34,7 +34,7 @@ exports.view = function(req, res) {
 	res.render('addSession',sessions);
 	console.log(newSession);
 
-}
-		res.render('addSession',sessions);
+	}
+	res.render('addSession',sessions);
 
 }
