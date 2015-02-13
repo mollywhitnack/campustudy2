@@ -17,13 +17,15 @@ exports.view = function(req, res) {
 }
 
 exports.del = function(req,res) {
-	var courseName = $(this).course;
+	var courseName = req.params.course;
 //	console.log("Hi Guys!!!!");
 	for(var i = 0; i < data.owner.length; i++){
 		if( data.owner[i].course == courseName){
 			delete data.owner[i];
 		}
 	}
-
-	res.render('settings', data);
+	res.render('../../settings', data);
+	res.end();
+	//res.render('settings',data);
+	//window.location.replace("../../settings");
 }
