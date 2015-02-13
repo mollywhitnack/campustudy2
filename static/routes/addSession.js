@@ -34,7 +34,7 @@ exports.view = function(req, res) {
 	res.render('addSession',sessions);
 	console.log(newSession);
 
-}
-		res.render('addSession',sessions);
+	}
+	res.render('addSession',sessions);
 
 }
