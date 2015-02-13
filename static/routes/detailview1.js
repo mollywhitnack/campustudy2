@@ -1,4 +1,4 @@
-var data1 = require("../common/json/data.json");
+var data = require("../common/json/data.json");
 
 exports.view = function(req, res) { 
 	// Your code goes here
@@ -10,8 +10,14 @@ exports.view = function(req, res) {
 		// if()
 	// });
 
+var name = req.params.name;
+console.log(name);
 
-	res.render('detailview1',data1);
-	//console.log(data1);
+	res.render('detailview1',data);
+	console.log(data
+
+
+		);
 	
 }
+

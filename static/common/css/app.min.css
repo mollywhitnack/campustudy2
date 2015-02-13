@@ -121,7 +121,7 @@ ul.list-view li.swiped .thumb-2{left:57.5px}
 ul.list-view li.swiped .thumb-3{left:115px}
 ul.list-view.large-padding>li{padding-top:15px;padding-bottom:15px}
 ul.list-view.large-padding>li:last-child{padding-bottom:0}
-ul.list-view.left-thumbs>li>.content{min-height:50px;padding-left:65px}
+ul.list-view.left-thumbs>li>.content{min-height:50px;padding-left:25px}
 ul.list-view.right-one-icons>li>.content{padding-right:27.5px}
 ul.list-view.right-two-icons>li>.content{padding-right:47.5px}
 ul.list-view.right-three-icons>li>.content{padding-right:67.5px}
