@@ -18,10 +18,12 @@ exports.view = function(req, res) {
 
 exports.del = function(req,res) {
 	var courseName = req.params.name;
+//	console.log("Hi Guys!!!!");
 	for(var i = 0; i < data.owner.length; i++){
 		if( data.owner[i].course == courseName){
 			delete data.owner[i];
 		}
 	}
+
 	res.render('deleteCourse', data);
 }
