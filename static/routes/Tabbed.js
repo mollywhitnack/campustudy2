@@ -14,3 +14,23 @@ exports.view = function(req, res) {
 	console.log(course);
 
 }
+
+
+/*function initializePage() 
+{
+  console.log("Javascript connected!");
+  console.log("friend name", $(this).text());
+}
+
+
+function findCourse(sessions)
+{
+	if(course == "cse12")
+	{
+		return course;
+	}
+	else {
+		console.log(course+ " not known for anagramming.");
+	}
+
+}*/

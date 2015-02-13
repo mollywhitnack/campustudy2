@@ -13,7 +13,7 @@ exports.view = function(req, res) {
     var professor = req.query.professor;
     var newCourse = {
 			"course": course,
-			"professor": professor,		
+			"professor": professor,	
     };
 
     courses["course"].push(newCourse);

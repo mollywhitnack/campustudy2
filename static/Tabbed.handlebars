@@ -56,99 +56,62 @@
 <li>
     <ul class="list-view left-thumbs right-one-icons">
   
-    <!-- for each class, add other sessions -->
+    {{#each cse12}}
         <li>
-            <div class="thumbs">
-                <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
-                <a href="#" class="thumb thumb-2"><img class="thumb" src="common/images/icons/tile-email.png" ></a>
-                <img class="thumb thumb-3" src="common/images/placeholders/contact-2.png">
-            </div><!-- .thumbs -->
-
             <a href="detailview1" class="content">
-                <h2>Rachel </h2>
-                <p>Geisel Library</p>
-                <p> 0.2 miles away</p>
-                <p>40 minutes</p>
+                <h2>{{name}} </h2>
+                <p>Location: {{location}}</p>
+                <p> Time left: {{timeleft}}</p>
+                <p>Professor: {{professor}}</p>
                 <div class="list-view-icons">
                     <span class="icon-right-arrow">&nbsp;</span>
                 </div>
             </a> 
         </li>
+    {{/each}}
 <!-- End listing for specific course -->
-
     </ul>
 </li>
+
+
 <li>
     <ul class="list-view left-thumbs right-one-icons">
+        {{#each phys2a}}
         <li>
-            <div class="thumbs">
-                <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
-                <a href="#" class="thumb thumb-2"><img class="thumb" src="common/images/icons/tile-email.png" ></a>
-                <img class="thumb thumb-3" src="../common/images/placeholders/contact-1.png">
-            </div><!-- .thumbs -->
             <a href="#" class="content">
-                <h2>Bruce </h2>
-                <p>Geisel Library</p>
-                <p> 0.2 miles away</p>
-                <p>40 minutes</p>
+                <h2>{{name}} </h2>
+                <p>Location: {{location}}</p>
+                <p> Time left: {{timeleft}}</p>
+                <p>Professor: {{professor}}</p>
                 <div class="list-view-icons">
                     <span class="icon-right-arrow">&nbsp;</span>
                 </div>
             </a>
         </li>
-        <li>
-            <div class="thumbs">
-                <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
-                <a href="#" class="thumb thumb-2"><img class="thumb" src="common/images/icons/tile-email.png" ></a>
-                <img class="thumb thumb-3" src="../common/images/placeholders/contact-4.png">
-            </div><!-- .thumbs -->
-            <a href="#" class="content">
-                <h2>Samantha </h2>
-                <p>Geisel Library</p>
-                <p> 0.2 miles away</p>
-                <p>40 minutes</p>
-                <div class="list-view-icons">
-                    <span class="icon-right-arrow">&nbsp;</span>
-                </div>
-            </a>
-        </li>
+        {{/each}}
     </ul>
 </li>
 
 <li>
     <ul class="list-view left-thumbs right-one-icons">
+        {{#each cogs120}}
         <li>
-            <div class="thumbs">
+            <!--<div class="thumbs">
                 <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
                 <a href="#" class="thumb thumb-2"><img class="thumb" src="common/images/icons/tile-email.png" ></a>
                 <img class="thumb thumb-3" src="common/images/placeholders/contact-1.png">
-            </div><!-- .thumbs -->
+            </div><! .thumbs -->
             <a href="#" class="content">
-                <h2>Luke </h2>
-                <p>Geisel Library</p>
-                <p> 0.2 miles away</p>
-                <p>40 minutes</p>
+                <h2>{{name}} </h2>
+                <p>Location: {{location}}</p>
+                <p> Time left: {{timeleft}}</p>
+                <p>Professor: {{professor}}</p>
                 <div class="list-view-icons">
                     <span class="icon-right-arrow">&nbsp;</span>
                 </div>
             </a>
         </li>
-        <li>
-            <div class="thumbs">
-                <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
-                <a href="#" class="thumb thumb-2"><img class="thumb" src="common/images/icons/tile-email.png" ></a>
-                <img class="thumb thumb-3" src="common/images/placeholders/contact-4.png">
-            </div><!-- .thumbs -->
-            <a href="#" class="content">
-                <h2>John </h2>
-                <p>Geisel Library</p>
-                <p> 0.2 miles away</p>
-                <p>40 minutes</p>
-                <div class="list-view-icons">
-                    <span class="icon-right-arrow">&nbsp;</span>
-                </div>
-            </a>
-        </li>
+        {{/each}}
     </ul>
 </li>
 
