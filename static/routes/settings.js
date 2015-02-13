@@ -10,6 +10,6 @@ exports.view = function(req, res) {
 		// if()
 	// });
 	var course = data["owner"];
-	res.render('settings',data["owner"]);
-	//console.log(course);
+	res.render('settings',course);
+	console.log(data);
 }
