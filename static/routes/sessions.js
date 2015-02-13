@@ -1,4 +1,4 @@
-var sessions = require("../common/json/sessions.json");
+var sessions = require("../common/json/data.json");
 
 exports.view = function(req, res) { 
 	// Your code goes here
