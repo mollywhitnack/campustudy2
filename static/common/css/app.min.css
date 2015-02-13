@@ -233,7 +233,7 @@ a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png) ;
 	background-image:-moz-linear-gradient(top,#597f86,#7ba8b0);
 	background-image:-o-linear-gradient(top,#597f86,#7ba8b0);
 	background-image:linear-gradient(top,#597f86,#7ba8b0);
-	display:block;position:relative;float:left;height:100%;line-height:45px;text-align:center;color:white;text-transform:uppercase;font-size:90%;font-weight:bolder}
+	display:block;position:relative;float:left;height:100%;line-height:28px;text-align:center;color:white;text-transform:uppercase;font-size:90%;font-weight:bolder}
 .data-capture-buttons.one-buttons a{width:100%}
 .data-capture-buttons.one-buttons .mysessions a{margin-top: 110%;}
 

@@ -121,9 +121,10 @@
 		"phone": 123456789
 	}
 	],
+
 	"owner" :[
     {
-        "course": "cse8a", 
+        "course": "cse12", 
         "professor": "Gaston Amsden"
 
     },
