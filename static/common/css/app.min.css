@@ -354,6 +354,7 @@ button.Zebra_DatePicker_Icon_Disabled{background-image:url("calendar-disabled.pn
 .splash .app-content .splash-screen-wrapper .content .login .facebookbutton{display:block;position:relative;width:50%;height:50%;float: center; text-align:center; font-size: 110%; color:black; background-color: white; padding: 3%;}
 .splash .app-content .splash-screen-wrapper .content .logo{display:block;margin-left: auto;
 	margin-right:none;position:;width:100%;height:60%;float: ;padding:;}
+	.splash .app-content .splash-screen-wrapper .content .logo img{ width:75%; float: center;}
 .splash .app-content .splash-screen-wrapper .content .tagline{display:block;position:relative;width:;height:;text-align:center;color:white;padding-top: 3%;margin-right: auto;margin-left: auto}
 
 
