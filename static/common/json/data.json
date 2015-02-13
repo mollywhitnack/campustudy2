@@ -1,0 +1,140 @@
+{"sessions":[
+    {
+        "name": "Tayna Giambrone",
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	360,
+		"howto": "I am at 2nd floor at corner 01",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+	},
+    {
+        "name": "Tayna Giambrone",
+        "course": "phys2a", 
+        "professor": "Monte Hames",
+		"location": "Geisel Library",
+		"timeleft":	160,
+		"howto": "I am at 2nd floor at corner 02",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+    },
+    {
+        "name": "Tayna Giambrone",
+        "course": "cogs120", 
+        "professor": "Nannette Rita",
+		"location": "Geisel Library",
+		"timeleft":	72,
+		"howto": "I am at 2nd floor at corner 04",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+    },
+    {
+        "name": "Leisha Krob",
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	170,
+		"howto": "I am at 2nd floor at corner",
+		"GPS":0,
+		"uid":2,
+		"phone": 123456789
+    },
+    {
+        "name": "Leisha Krob",
+        "course": "cogs120", 
+        "professor": "Thu Whicker",
+		"location": "Price Center",
+		"timeleft":	89,
+		"howto": "in front of BK",
+		"GPS":0,
+		"uid":2,
+		"phone": 123456789
+    },
+    {
+        "name": "Marylouise Wehner",
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"location": "CSE Basement",
+		"timeleft":	159,
+		"howto": "B250",
+		"GPS":0,
+		"uid":3,
+		"phone": 123456789
+    },
+    {
+        "name": "Becki Howerton",
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	12,
+		"howto": "I am at 1nd floor",
+		"GPS":0,
+		"uid":4,
+		"phone": 123456789
+    },
+    {
+        "name": "Classie Donlin",
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"location": "Warren",
+		"timeleft":	194,
+		"howto": "near XXX",
+		"GPS":0,
+		"uid":5,
+		"phone": 123456789
+    },
+	{
+        "name": "Becki Howerton",
+        "course": "phys2a", 
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	12,
+		"howto": "I am at 1nd floor",
+		"GPS":0,
+		"uid":4
+    },
+	{
+        "name": "Becki Howerton",
+        "course": "CHEM6A", 
+        "professor": "Jung Wyant",
+		"location": "Geisel Library",
+		"timeleft":	12,
+		"howto": "I am at 1nd floor",
+		"GPS":0,
+		"uid":4
+    }],
+	
+	"mysessions":[
+    {
+        "name": "Judy White",
+        "course": "cse8a", 
+        "professor": "Gaston Amsden",
+		"location": "Geisel Library",
+		"timeleft":	360,
+		"howto": "I am at 2nd floor at corner 01",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789
+	}
+	],
+	"owner" :[
+    {
+        "course": "cse8a", 
+        "professor": "Gaston Amsden"
+
+    },
+    {
+        "course": "phys2a", 
+        "professor": "Monte Hames"
+    },
+    {
+        "course": "cogs120", 
+        "professor": "Nannette Rita"
+    }
+    ]
+
+}

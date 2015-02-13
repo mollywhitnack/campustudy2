@@ -1,4 +1,4 @@
-var course = require("../common/json/course.json");
+var data = require("../common/json/data.json");
 
 exports.view = function(req, res) { 
 	// Your code goes here
@@ -9,6 +9,7 @@ exports.view = function(req, res) {
 	// jQuery.each(course,function(){
 		// if()
 	// });
-	res.render('settings',course);
-	console.log(course);
+	var course = data["owner"];
+	res.render('settings',data["owner"]);
+	//console.log(course);
 }
