@@ -33,12 +33,11 @@
 <div class="app-content">
 
 <div class="tabbed-list-view-nav">
-
-<a href="#" class="span-50 on"> course</a>
-<a href="#" class="span-50 on"> course</a>
-<a href="#" class="span-50 on"> course</a>
-
+{{#each owner}}
+<a href="#" class="span-33 on"> {{course}}</a>
+{{/each}}
 <div class="tabbed-list-view-nav-arrow">&nbsp;</div>
+
 </div>
 
 
@@ -159,7 +158,7 @@
 </div><!--#app-content-->
 
     <div class = "mysessions2">
-      <a href="sessions.html">
+      <a href="sessions">
         <div class="footer2">My Sessions</div>
       </a>
     </div>
