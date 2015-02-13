@@ -13,5 +13,15 @@ exports.view = function(req, res) {
 	//console.log(data);
 	//console.log("here");
 	console.log(course);
-	res.render('Settings',data);
+	res.render('settings',data);
+}
+
+exports.del = function(req,res) {
+	var courseName = req.params.name;
+	for(var i = 0; i < data.owner.length; i++){
+		if( data.owner[i].course == courseName){
+			delete data.owner[i];
+		}
+	}
+	res.render('deleteCourse', data);
 }

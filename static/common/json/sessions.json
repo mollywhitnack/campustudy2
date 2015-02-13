@@ -5,6 +5,7 @@
         "professor": "Gaston Amsden",
 		"location": "Geisel Library",
 		"timeleft":	360,
+		"extra": "lalalala",
 		"howto": "I am at 2nd floor at corner 01",
 		"GPS":0,
 		"uid":1,
@@ -16,6 +17,7 @@
         "professor": "Monte Hames",
 		"location": "Geisel Library",
 		"timeleft":	160,
+		"extra": "lalalala",
 		"howto": "I am at 2nd floor at corner 02",
 		"GPS":0,
 		"uid":1,
@@ -28,6 +30,7 @@
 		"location": "Geisel Library",
 		"timeleft":	72,
 		"howto": "I am at 2nd floor at corner 04",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":1,
 		"phone": 123456789
@@ -39,6 +42,7 @@
 		"location": "Geisel Library",
 		"timeleft":	170,
 		"howto": "I am at 2nd floor at corner",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":2,
 		"phone": 123456789
@@ -50,6 +54,7 @@
 		"location": "Price Center",
 		"timeleft":	89,
 		"howto": "in front of BK",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":2,
 		"phone": 123456789
@@ -61,6 +66,7 @@
 		"location": "CSE Basement",
 		"timeleft":	159,
 		"howto": "B250",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":3,
 		"phone": 123456789
@@ -72,6 +78,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":4,
 		"phone": 123456789
@@ -83,6 +90,7 @@
 		"location": "Warren",
 		"timeleft":	194,
 		"howto": "near XXX",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":5,
 		"phone": 123456789
@@ -94,6 +102,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":4
     },
@@ -104,6 +113,7 @@
 		"location": "Geisel Library",
 		"timeleft":	12,
 		"howto": "I am at 1nd floor",
+		"extra": "lalalala",
 		"GPS":0,
 		"uid":4
     }
