@@ -1,4 +1,5 @@
 var data = require("../common/json/data.json");
+var course = require("../common/json/course.json");
 
 exports.view = function(req, res) { 
 	// Your code goes here
@@ -9,7 +10,18 @@ exports.view = function(req, res) {
 	// jQuery.each(course,function(){
 		// if()
 	// });
-	var course = data["owner"];
-	res.render('settings',data["owner"]);
-	//console.log(course);
+	//console.log(data);
+	//console.log("here");
+	console.log(course);
+	res.render('settings',data);
+}
+
+exports.del = function(req,res) {
+	var courseName = req.params.name;
+	for(var i = 0; i < data.owner.length; i++){
+		if( data.owner[i].course == courseName){
+			delete data.owner[i];
+		}
+	}
+	res.render('deleteCourse', data);
 }
