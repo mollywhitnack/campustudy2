@@ -1,0 +1,17 @@
+{"owner" :[
+    {
+        "course": "cse8a", 
+        "professor": "Gaston Amsden"
+
+    },
+    {
+        "course": "phys2a", 
+        "professor": "Monte Hames"
+    },
+    {
+        "course": "cogs120", 
+        "professor": "Nannette Rita"
+    }
+
+    ]
+}

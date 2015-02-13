@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="common/css/app.min.css">
 <script src="common/js/jQuery2.0.2.min.js"></script>
-<script src="common/js/jquery.touchwipe.min.js"></script>
 <script src="common/js/main.min.js"></script>
 
 </head>
@@ -33,12 +32,13 @@
 
 <div class="app-content">
 
-
 <div class="tabbed-list-view-nav">
-    <a href="#" class="span-50 on">Phys1B</a>
-    <a href="#" class="span-50">Chem6A</a>
-    <a href="#" class="span-50">CSE100</a>
-    <div class="tabbed-list-view-nav-arrow">&nbsp;</div>
+
+<a href="#" class="span-50 on"> course</a>
+<a href="#" class="span-50 on"> course</a>
+<a href="#" class="span-50 on"> course</a>
+
+<div class="tabbed-list-view-nav-arrow">&nbsp;</div>
 </div>
 
 
@@ -54,6 +54,8 @@
  <!-- for each session, if {{couse}} == correct class, do this -->   
 <li>
     <ul class="list-view left-thumbs right-one-icons">
+  
+    <!-- for each class, add other sessions -->
         <li>
             <div class="thumbs">
                 <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
@@ -71,23 +73,8 @@
                 </div>
             </a> 
         </li>
+<!-- End listing for specific course -->
 
-        <li>
-            <div class="thumbs">
-                <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
-                <a href="#" class="thumb thumb-2"><img class="thumb" src="common/images/icons/tile-email.png" ></a>
-                <img class="thumb thumb-3" src="../common/images/placeholders/contact-3.png">
-            </div><!-- .thumbs -->
-            <a href="#" class="content">
-                <h2>Nathan </h2>
-                <p>Geisel Library</p>
-                <p> 0.2 miles away</p>
-                <p>40 minutes</p>
-                <div class="list-view-icons">
-                    <span class="icon-right-arrow">&nbsp;</span>
-                </div>
-            </a> 
-        </li>
     </ul>
 </li>
 <li>
@@ -168,16 +155,14 @@
 
 
 </ul><!--.tabbed-list-view-->
-
-
-<section class="data-capture-buttons one-buttons">
-        <div class = "mysessions">
-        <a href="sessions">My Sessions</a>
-       </div>
-</section> 
-
+    
 </div><!--#app-content-->
 
+    <div class = "mysessions2">
+      <a href="sessions.html">
+        <div class="footer2">My Sessions</div>
+      </a>
+    </div>
 </div><!--#app-wrapper-->
 
 
