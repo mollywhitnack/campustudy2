@@ -11,7 +11,7 @@ exports.view = function(req, res) {
 	// });
     var course = req.query.course;
     var professor = req.query.professor;
-    if(course != null) {
+    if(course != null && course != "") {
     var newCourse = {
 			"course": course,
 			"professor": professor,	
