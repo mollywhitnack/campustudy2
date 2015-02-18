@@ -38,8 +38,10 @@ app.use(express.cookieParser('CampuStudy Security Key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, '/static')));
+app.post('/login', passport.authenticate('local', { successRedirect: '/',
+                                                    failureRedirect: '/login' }));
 
-// development only
+													// development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
