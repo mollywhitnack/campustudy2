@@ -9,7 +9,7 @@ exports.view = function(req, res) {
 	// jQuery.each(course,function(){
 		// if()
 	// });
-    var course = req.query.course;
+    var course = req.query.selectcourse;
     var location = req.query.location;
     var howto= req.query.howto;
     var hours = req.query.hours;
@@ -18,7 +18,7 @@ exports.view = function(req, res) {
     hours = parseInt(hours) + parseInt(mins);
     var extra = req.query.extra;
     var phone = req.query.phone;
-    if(course != null) {
+    if(course != null && course != "") {
     var newSession = {
 	
         "course": course, 
@@ -37,4 +37,32 @@ exports.view = function(req, res) {
 	}
 	res.render('addSession',sessions);
 
+}
+
+function validateForm() {
+    var x = document.forms["addsession"]["course"].value;
+    if (x == null || x == "") {
+        alert("Course must be selected");
+        return false;
+    }
+    x = document.forms["addsession"]["location"].value;
+    if (x == null || x == "") {
+        alert("Location must be entered");
+        return false;
+    }
+    x = document.forms["addsession"]["howto"].value;
+    if (x == null || x == "") {
+        alert("Please enter how to find you");
+        return false;
+    }
+    x = document.forms["addsession"]["hours"].value;
+    if (x == null || x == "") {
+        alert("Please enter hours");
+        return false;
+    }
+    x = document.forms["addsession"]["mins"].value;
+    if (x == null || x == "") {
+        alert("Please enter minutes");
+        return false;
+     }
 }

@@ -31,17 +31,17 @@
 
 <div class="app-content">
 
-<form>
+<form name="addsession" onsubmit ="return validateForm()">
 
 <section class="border-bottom">
 	<div class="content">
 		<h3>Course</h3>
 		<div class="form-control-group">
 			<div class="form-control form-control-select">
-				<select name = "course">
+				<select name = "selectcourse">
+					<option></option>
 					{{#each owner}}
 					<option>{{course}}</option>
-					
 					{{/each}}
 				</select>
 			</div>
