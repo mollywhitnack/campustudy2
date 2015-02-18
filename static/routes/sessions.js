@@ -27,7 +27,9 @@ exports.del = function(req,res) {
 			newArr.push(data.mysessions[i]);
 		}
 	}
-	data.myssesions = newArr;
+	data.mysessions = newArr;
+	console.log(newArr);
+	console.log(data);
 	
 	//res.json(data);
 	res.render('deleteSession', data);
