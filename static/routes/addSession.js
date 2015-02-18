@@ -9,7 +9,7 @@ exports.view = function(req, res) {
 	// jQuery.each(course,function(){
 		// if()
 	// });
-    var course = req.query.selectcourse;
+    var course = req.query.course;
     var location = req.query.location;
     var howto= req.query.howto;
     var hours = req.query.hours;
@@ -40,29 +40,25 @@ exports.view = function(req, res) {
 }
 
 function validateForm() {
-    var x = document.forms["addsession"]["course"].value;
-    if (x == null || x == "") {
-        alert("Course must be selected");
+	console.log("validating form...");   
+    if (document.forms["addsession"]["course"].value == null || document.forms["addsession"]["course"].value == "") {
+        alert("You must select a course");
         return false;
     }
-    x = document.forms["addsession"]["location"].value;
-    if (x == null || x == "") {
-        alert("Location must be entered");
+    if (document.forms["addsession"]["location"].value == null || document.forms["addsession"]["location"].value == "") {
+        alert("You must enter your location");
         return false;
     }
-    x = document.forms["addsession"]["howto"].value;
-    if (x == null || x == "") {
-        alert("Please enter how to find you");
+    if (document.forms["addsession"]["howto"].value == null || document.forms["addsession"]["howto"].value == "") {
+        alert("Please give a specific description of how to find you");
         return false;
     }
-    x = document.forms["addsession"]["hours"].value;
-    if (x == null || x == "") {
-        alert("Please enter hours");
+    if (document.forms["addsession"]["hours"].value == null || document.forms["addsession"]["hours"].value == "") {
+        alert("Please enter number of hours");
         return false;
     }
-    x = document.forms["addsession"]["mins"].value;
-    if (x == null || x == "") {
-        alert("Please enter minutes");
+    if (document.forms["addsession"]["mins"].value == null || document.forms["addsession"]["mins"].value == "") {
+        alert("Please enter number of minutes");
         return false;
      }
 }
