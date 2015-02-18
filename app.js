@@ -54,6 +54,7 @@ app.get('/detailview1', detailview1.view);
 app.get('/mapview2', mapview2.view);
 app.get('/sessions', sessions.view);
 app.get('/deleteCourse/:name', settings.del);
+app.get('/deleteSession/:course', sessions.del);
 // Example route
 // app.get('/users', user.list);
 
