@@ -6,9 +6,9 @@
 <title>Detail View 1 Template</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="./common/css/app.min.css">
-<script src="./common/js/jQuery2.0.2.min.js"></script>
-<script src="./common/js/main.min.js"></script>
+<link rel="stylesheet" href="../common/css/app.min.css">
+<script src="../common/js/jQuery2.0.2.min.js"></script>
+<script src="../common/js/main.min.js"></script>
 
 </head>
 
@@ -16,14 +16,8 @@
 
 <div class="app-wrapper">
 
-<nav class="main-menu">
-<a href="#">Class</a>
-<a href="#">Something</a>
-<a href="#">Something</a>
-</nav><!--#main-menu-->
-
 <header>
-<div class="main-menu-button main-menu-button-left"><a class="left-arrow" href = "Tabbed" >&nbsp;</a></div>
+<div class="main-menu-button main-menu-button-left"><a class="left-arrow" href = "../Tabbed" >&nbsp;</a></div>
 <!--<div class="main-menu-button main-menu-button-right"><a class="gear">&nbsp;</a></div>-->
 <h1>CampuStudy</h1>
 </header>
@@ -32,7 +26,7 @@
 
 <div class="detail-view-header left-thumb with-action-panel">
     <div class="content">
-        <h1>Tanya Giambrone</h1>
+        <h1>{{dName}}</h1>
         <!--<div class="detail-view-action-panel">
             <a href="#" class="action-note open-modal">&nbsp;</a>
             <a href="#" class="action-map open-modal">&nbsp;</a>
@@ -43,57 +37,34 @@
 <section class="border-bottom">
     <div class="content">
         <h3>Location</h3>
-            <p>Geisel Library</p>
-                <p> 0.2 miles away</p>
+            <p>{{dLocation}}</p>
+                <p>{{dHowto}}</p>
         </p>
     </div>
 </section>
 
 <ul class="list-view right-one-icons medium-padding">
+
         <li class="content">
-            <h3>Time</h3>
-            <div class="detail-view-table">
-                <div class="detail-view-table-row">
-                    <div class="detail-view-table-left-column">Start</div>
-                    <div class="detail-view-table-right-column">
-                        <h2>3:20 p.m.</h2>
-                    </div>
-                </div><!--.detail-view-table-row-->
-                <div class="detail-view-table-row last-child">
-                    <div class="detail-view-table-left-column">End</div>
-                    <div class="detail-view-table-right-column">
-                        <h2>5:30 p.m.</h2>
-                    </div>
-                </div><!--.detail-view-table-row-->
-            </div><!--.detail-view-table-->
-            <div class="list-view-icons">
-               <!-- <span class="icon-right-arrow">&nbsp;</span>-->
-            </div>
-        
-    </li>
+            <h3>Time Left</h3>
+            <h1 class="inline"></h1> {{dTime}}
+        </li>
         <li class="content">
             <h3>Professor</h3>
-            <h1 class="inline"></h1> Gaston Amsden
+            <h1 class="inline"></h1> {{dProfessor}}
         </li>
         <li class="content">
-            <h3>Working on</h3>
-            <h1 class="inline"></h1> Assignment 3
-        </li>
-        <li class="content">
-            <h3>How to Find me: </h3>
-            <h1 class="inline"></h1> I am at 2nd floor at corner 01
+            <h3>Extra</h3>
+            <h1 class="inline"></h1> {{dExtra}}
         </li>
 </ul>
 
 <section class="border-top">
     <div class="content">
        <h3>Contact</h3>
-        <p>Email:
-            <a href="#">Tanya@ucsd.edu</a><br/>
-        </p>
         <p class="no-bottom-padding">
             Phone:
-            <a href="#">333-222-4444</a><br/>
+            <a href="#">{{dPhone}}</a><br/>
         </p>
     </div>
 </section>

@@ -1,21 +1,26 @@
-var sessions = require("../common/json/sessions.json");
-var course = require("../common/json/data.json");
+var data = require("../common/json/data.json");
+var course = require("../common/json/course.json");
 
-exports.view = function(req, res) { 
-	// Your code goes here
-	//var newFriends = {'name': req.query.name, 'description': req.query.description, 'imageURL': 'http://lorempixel.com/500/500/people'};
-	//data["friends"].push(newFriends);
-	//console.log(newFriends);
-	//res.render('add',data);
-	// jQuery.each(course,function(){
-		// if()
-	// });
-	// var data3 = {'owner': []};
-	// for(var i = 0; i < 3; i++){
-		// data3.owner.push(course.owner[i]);
-	// }
-	res.render('Tabbed',course);
+exports.view = function(req, res)
+{ 
 	console.log(course);
+	res.render('Tabbed', data);
+
+	//var tCourse = req.params.course;
+	for(var i = 0; i < data.sessions.length; i++)
+	{for(var j = 0; j<data.owner.length; j++)
+		if( data.sessions[i].course == data.owner[j].course)
+		{
+		 console.log("Session: "+ data.sessions[i].course + " Owner: " + data.owner[j].course);
+		 return data.sessions[i].name;
+		 /*res.render('Tabbed',
+			{
+			'tName': data.sessions[i].name,
+			'tLocation': data.sessions[i].location,
+			'tProfessor': data.sessions[i].professor
+			});*/
+		}
+	}
 
 }
 

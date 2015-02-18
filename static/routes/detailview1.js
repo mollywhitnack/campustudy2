@@ -1,23 +1,26 @@
 var data = require("../common/json/data.json");
 
 exports.view = function(req, res) { 
-	// Your code goes here
-	//var newFriends = {'name': req.query.name, 'description': req.query.description, 'imageURL': 'http://lorempixel.com/500/500/people'};
-	//data["friends"].push(newFriends);
-	//console.log(newFriends);
-	//res.render('add',data);
-	// jQuery.each(course,function(){
-		// if()
-	// });
+var newsessionid = req.params.name;
+for(var i = 0; i < data.sessions.length; i++)
+{
+	if( data.sessions[i].sessionid == newsessionid)
+		{
+			console.log("Works, save data: "+ newsessionid);
+			console.log("name: "+ data.sessions[i].name);
+			res.render('detailview1',
+			{
+			'dName': data.sessions[i].name,
+			'dLocation': data.sessions[i].location,
+			'dHowto':data.sessions[i].howto,
+			'dTime': data.sessions[i].timeleft,
+			'dProfessor': data.sessions[i].professor,
+			'dPhone': data.sessions[i].phone,
+			'dExtra': data.sessions[i].extra
 
-var name = req.params.name;
-console.log(name);
-
-	res.render('detailview1',data);
-	console.log(data
-
-
-		);
+			});
+		}
+	}
 	
 }
 

@@ -59,11 +59,11 @@ section>.content{display:block;position:relative;float:left;width:100%;padding-l
 
 section.border-top .content{border-top:1px dotted #e0e0e0}
 section.border-bottom .content{border-bottom:1px dotted #e0e0e0;}
-.show{display:block;position:relative}
+.show{display:block;position:relative; float:left}
 .span-33{display:block;position:relative;float:left;width:33.33333%}
 .span-66{display:block;position:relative;float:left;width:66.66667%}
 .span-25{display:block;position:relative;float:left;width:25%}
-
+.span-20{display:block;position:relative;float:left;width:20%; border-style: solid;}
 /*Tabs width*/
 .span-50{display:block;position:relative;float:left;width:50.0%}
 
@@ -94,12 +94,13 @@ section.border-bottom .content{border-bottom:1px dotted #e0e0e0;}
 
 .courseheader{background-color: black; color:white; padding-top: 1%; padding-bottom: 1%}
 div.tabbed-list-view-nav{display:block;position:relative;height:50px;width:100%;margin-bottom:7.5px}
-div.tabbed-list-view-nav a{ padding-left: 1%; padding-right: 1%;  display:inline-block;position:relative;
+div.tabbed-list-view-nav a{ padding-left: 2%; padding-right: 2%;  display:inline-block;position:relative;
 	height:100%;line-height:50px;background:black;color:#666;text-transform:uppercase;text-align:center}
 
-div.tabbed-list-view-nav a.on{color:white}
-div.tabbed-list-view-nav .tabbed-list-view-nav-arrow{display:block;position:absolute;bottom:-7.5px;
-	left:0;width:0;height:0;border-style:solid;border-width:7.5px 7.5px 0 7.5px;
+div.tabbed-list-view-nav a.on{color:white; background-color:none; border-style: none;}
+div.tabbed-list-view-nav .tabbed-list-view-nav-arrow{
+	display:block;position:absolute;bottom:-7.5px;
+	left:0;width:0;height:0;border-style:solid;border-width:9.5px 7.5px 0 7.5px;
 	border-color:black transparent transparent transparent;margin-left:-7.5px}
 
 ul.tabbed-list-view{-webkit-transition-property:left;-moz-transition-property:left;-o-transition-property:

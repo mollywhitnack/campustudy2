@@ -50,7 +50,7 @@ app.get('/settings', settings.view);
 app.get('/addCourse', addCourse.view);
 app.get('/addSession', addSession.view);
 app.get('/Tabbed', Tabbed.view);
-app.get('/detailview1', detailview1.view);
+app.get('/detailview1/:name', detailview1.view);
 app.get('/mapview2', mapview2.view);
 app.get('/sessions', sessions.view);
 app.get('/deleteCourse/:name', settings.del);
