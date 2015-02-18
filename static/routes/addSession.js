@@ -61,4 +61,36 @@ function validateForm() {
         alert("Please enter number of minutes");
         return false;
      }
+
+
+// allow only one session per course
+     for(var i = 0; i < sessions.mysessions.length; i++)
+     {
+    // 	console.log("course is " + sessions.mysessions[i].course.value );
+        if(sessions.mysessions[i].course.value == document.forms["addsession"]["course"].value)
+        {
+        	alert("Could not create session. You already have an active session for this course!");
+        	return false;
+        }
+     };
+
+
+// get GPS location
+    if (navigator.geolocation) {
+     /*   if(navigator.geolocation.getCurrentPosition(gettingPosition)) {}
+        else {
+           alert("Please allow access to your location to create session or press CANCEL to go back to My Sessions.");
+           return false;
+        } */
+    } 
+    else { 
+    	alert("Could not create session. Please use a browser that supports location data.");
+        return false;
+    }
+
+}
+
+function gettingPosition(position)
+{
+
 }
