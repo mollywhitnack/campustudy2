@@ -12,18 +12,21 @@ exports.view = function(req, res) {
 	// });
 	//console.log(data);
 	//console.log("here");
-	console.log(course);
+	console.log(data.owner);
 	res.render('Settings',data);
 }
 
 exports.del = function(req,res) {
 	var courseName = req.params.course;
-//	console.log("Hi Guys!!!!");
+	console.log(courseName);
 	for(var i = 0; i < data.owner.length; i++){
 		if( data.owner[i].course == courseName){
+			console.log("do delete course");
 			delete data.owner[i];
 		}
 	}
+	
+	//res.json(data);
 	res.render('deleteCourse', data);
 	//res.end();
 	//res.render('settings',data);
