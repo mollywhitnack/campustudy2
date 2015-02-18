@@ -38,8 +38,10 @@ app.use(express.cookieParser('CampuStudy Security Key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, '/static')));
+app.post('/login', passport.authenticate('local', { successRedirect: '/',
+                                                    failureRedirect: '/login' }));
 
-// development only
+													// development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
@@ -55,6 +57,16 @@ app.get('/mapview2', mapview2.view);
 app.get('/sessions', sessions.view);
 app.get('/deleteCourse/:name', settings.del);
 app.get('/deleteSession/:course', sessions.del);
+app.get('/auth/facebook', passport.authenticate('facebook'));
+
+// Facebook will redirect the user to this URL after approval.  Finish the
+// authentication process by attempting to obtain an access token.  If
+// access was granted, the user will be logged in.  Otherwise,
+// authentication has failed.
+app.get('/auth/facebook/callback', 
+  passport.authenticate('facebook', { successRedirect: '/Tabbed',
+                                      failureRedirect: '/' }));
+
 // Example route
 // app.get('/users', user.list);
 
