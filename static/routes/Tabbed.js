@@ -7,7 +7,7 @@ exports.view = function(req, res)
 	res.render('Tabbed', data);
 	//console.log(data);
 	//var tCourse = req.params.course;
-	var listing[];
+	//var listing[];
 	for(var i = 0; i < data.sessions.length; i++)
 	{for(var j = 0; j<data.owner.length; j++)
 		if( data.sessions[i].course == data.owner[j].course)

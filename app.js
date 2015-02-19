@@ -60,12 +60,11 @@ app.get('/mapview2', mapview2.view);
 app.get('/sessions', sessions.view);
 app.get('/deleteCourse/:name', settings.del);
 app.get('/deleteSession/:course', sessions.del);
-<<<<<<< HEAD
+
 //app.get('/auth/facebook', passport.authenticate('facebook'));
 
-=======
 app.get('/auth/facebook', passport.authenticate('facebook'));
->>>>>>> ebfcb60a3d216befa23dd54b583b24e7b1517377
+
 // Facebook will redirect the user to this URL after approval.  Finish the
 // authentication process by attempting to obtain an access token.  If
 // access was granted, the user will be logged in.  Otherwise,
