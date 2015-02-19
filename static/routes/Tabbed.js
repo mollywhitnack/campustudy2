@@ -5,14 +5,17 @@ exports.view = function(req, res)
 { 
 	console.log(course);
 	res.render('Tabbed', data);
-
+	//console.log(data);
 	//var tCourse = req.params.course;
+	var listing[];
 	for(var i = 0; i < data.sessions.length; i++)
 	{for(var j = 0; j<data.owner.length; j++)
 		if( data.sessions[i].course == data.owner[j].course)
 		{
 		 console.log("Session: "+ data.sessions[i].course + " Owner: " + data.owner[j].course);
-		 return data.sessions[i].name;
+		 console.log("id: " + data.sessions[i].sessionid);
+		// function sessionList(data.sessions[i].course, data.sessions[i].sessionid);
+		 //return data.sessions[i].name;
 		 /*res.render('Tabbed',
 			{
 			'tName': data.sessions[i].name,
@@ -23,6 +26,12 @@ exports.view = function(req, res)
 	}
 
 }
+
+/*function session list()
+{
+
+
+}*/
 
 
 /*function initializePage() 

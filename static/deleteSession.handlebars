@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>My Sessions</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="../../common/css/app.min.css">
+<script src="../../common/js/jQuery2.0.2.min.js"></script>
+<script src="../../common/js/main.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="app-wrapper">
+
+<nav class="main-menu">
+<a href="#">Something</a>
+<a href="#">Something</a>
+<a href="#">Something</a>
+</nav><!--#main-menu-->
+
+<header>
+<div class="main-menu-button main-menu-button-left"><a class="left-arrow" href = "../../Tabbed">&nbsp;</a></div>
+<div class="main-menu-button main-menu-button-right"><a class="plus" href="../../addSession">&nbsp;</a></div>
+<h1>My Sessions</h1>
+</header>
+
+<div class="app-content">
+
+<form>
+
+
+
+{{#each mysessions}}
+<section class="border-bottom">
+	<div class="content">
+        
+		<div class="span-66 settings settings-left">
+            <h3>{{course}}</h3>
+			Time Left: {{timeleft}} min
+        </div><!-- .span-50 -->
+        <div class="span-33 settings settings-right">
+            <div class="form-control-group">
+				<div class="form-setting-delete">
+					<a href="../../deleteSession/{{course}}"> &nbsp;</a>
+				</div>
+			</div>
+		</div><!--.span-50-->	
+
+	</div><!-- .content -->
+</section>
+{{/each}}
+
+
+
+</form>
+</div><!--#app-content-->
+</div><!--#app-wrapper-->
+
+</body>
+</html>

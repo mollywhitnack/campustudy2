@@ -11,6 +11,7 @@
 <script src="./common/js/zebra_datepicker.min.js"></script>
 <script src="./common/js/jquery.nouislider.min.js"></script>
 <script src="./common/js/main.min.js"></script>
+<script src="./routes/addSession.js"></script>
 
 </head>
 
@@ -31,7 +32,7 @@
 
 <div class="app-content">
 
-<form>
+<form name="addsession" id ="addsession" onsubmit ="return validateForm()">
 
 <section class="border-bottom">
 	<div class="content">
@@ -39,9 +40,9 @@
 		<div class="form-control-group">
 			<div class="form-control form-control-select">
 				<select name = "course">
+					<option></option>
 					{{#each owner}}
 					<option>{{course}}</option>
-					
 					{{/each}}
 				</select>
 			</div>

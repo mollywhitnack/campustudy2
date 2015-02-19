@@ -1,4 +1,4 @@
-var sessions = require("../common/json/data.json");
+var data = require("../common/json/data.json");
 
 exports.view = function(req, res) { 
 	// Your code goes here
@@ -9,6 +9,31 @@ exports.view = function(req, res) {
 	// jQuery.each(course,function(){
 		// if()
 	// });
-	res.render('sessions',sessions);
-	console.log(sessions);
+	res.render('sessions',data);
+	console.log(data);
+}
+
+
+exports.del = function(req,res) {
+	var courseName = req.params.course;
+	console.log(courseName);
+	var newArr=[];
+	for(var i = 0; i < data.mysessions.length; i++){
+		if( data.mysessions[i].course == courseName){
+			console.log("do delete course");
+			delete data.mysessions[i];
+		}
+		else{
+			newArr.push(data.mysessions[i]);
+		}
+	}
+	data.mysessions = newArr;
+	console.log(newArr);
+	console.log(data);
+	
+	//res.json(data);
+	res.render('deleteSession', data);
+	//res.end();
+	//res.render('settings',data);
+	//window.location.replace("../../settings");
 }

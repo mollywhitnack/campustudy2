@@ -6,9 +6,13 @@
 <title>My Courses</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="../common/css/app.min.css">
-<script src="../common/js/jQuery2.0.2.min.js"></script>
-<script src="../common/js/main.min.js"></script>
+<link rel="stylesheet" href="../../common/css/app.min.css">
+<script src="../../common/js/jQuery2.0.2.min.js"></script>
+<script src="../../common/js/main.min.js"></script>
+<script>
+
+
+</script>
 
 </head>
 
@@ -23,9 +27,9 @@
 </nav><!--#main-menu-->
 
 <header>
-<div class="main-menu-button main-menu-button-left"><a class="left-arrow" href = "Tabbed">&nbsp;</a></div>
-<div class="main-menu-button main-menu-button-right"><a class="plus" href="addCourse">&nbsp;</a></div>
-<h1>Courses</h1>
+<div class="main-menu-button main-menu-button-left"><a class="left-arrow" href = "../../Tabbed">&nbsp;</a></div>
+<div class="main-menu-button main-menu-button-right"><a class="plus" href="../../addCourse">&nbsp;</a></div>
+<h1>My Courses</h1>
 </header>
 
 <div class="app-content">
@@ -42,10 +46,10 @@
             <h3>{{course}}</h3>
 			Professor: {{professor}}
         </div><!-- .span-50 -->
-        <div class="span-50 settings settings-right">
+        <div class="span-33 settings settings-right">
             <div class="form-control-group">
 				<div class="form-setting-delete">
-					<a name={{course}} href="../deleteCourse/{{course}}">&nbsp;</a>
+					<a  id="{{course}}" href="../../deleteCourse/{{course}}">&nbsp;</a>
 				</div>
 			</div><!--.span-50-->	
 		</div><!-- .content -->
