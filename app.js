@@ -45,7 +45,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new FacebookStrategy({
     clientID: FACEBOOK_APP_ID,
     clientSecret: FACEBOOK_APP_SECRET,
-    callbackURL: "http://localhost:3000/auth/facebook/callback"
+    callbackURL: "http://campustudy2.herokuapp.com/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
@@ -71,7 +71,7 @@ app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));
-app.use(express.json());http://localhost:1234/Tabbed.html#
+app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(express.cookieParser('CampuStudy Security Key'));
