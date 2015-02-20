@@ -147,12 +147,6 @@
 
 	"owner" :[
     {
-        "course": "cse12", 
-        "professor": "Gaston Amsden",
-        "oid": "1"
-
-    },
-    {
         "course": "phys2a", 
         "professor": "Monte Hames",
         "oid": "2"

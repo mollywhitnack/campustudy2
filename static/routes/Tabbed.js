@@ -28,62 +28,50 @@ exports.view = function(req, res)
 			 "professor":data.sessions[j].professor,
 			 "sessionid": data.sessions[j].sessionid
     		 };
-    	console.log("start t2: " + t2);
-    	console.log("start t3: " + t3);
+
 
     	if(i == 0 && t1 ==0)
     	{
     	var n1 = data.course1.length;
-      	console.log("n1 :" +  n1 + " at t1:  " + t1);
-    	//var course1{}
     	data.course1.push(tabmatch);
-    	console.log();
-    	//console.log(tabmatch);
-    	//console.log("pushed to course1");
-    	//console.log("n: " + n1);
+    	console.log("i =0,  j=" + j);
+    	console.log(tabmatch);
 		}
     	if(i == 1 && t2 ==0)
     	{
-    	
     	var n2 = data.course2.length;	
-    	console.log("n2 :" +  n2 + " at t2:  " + t2);
     	data.course2.push(tabmatch);
-    	console.log();
-    	//console.log(tabmatch);
-		//console.log("pushed to course2");
+    	console.log("i =1,  j=" + j);
+    	console.log(tabmatch);
 		}
 		if(i ==2 && t3 ==0)
     	{
     	var n3 = data.course3.length;	
-    	console.log("n3 :" +  n3 + " at t3:  " + t3);
     	data.course3.push(tabmatch);
-    	    	console.log();
-    	//console.log(tabmatch);
-    	//console.log("pushed to course3");
+    	console.log("i =2,  j=" + j);
+    	console.log(tabmatch);
 		}
     	if(i == 3 && t4 ==0)
     	{
     	var n4 = data.course4.length;
     	data.course4.push(tabmatch);
-    	    	console.log();
-    	//console.log(tabmatch);
-		//console.log("pushed to course4");
+    	console.log("i =3,  j=" + j);
+    	console.log(tabmatch);
 		}
 		if(i ==4 && t5 ==0 )
     	{
     	var n5 = data.course5.length;
     	data.course5.push(tabmatch);
-    	    	console.log();
-    	//console.log(tabmatch);
-    	//console.log("pushed to course5");
+    	console.log("i =4,  j=" + j);
+    	console.log(tabmatch);
 		}
     	else
     	{
 		//console.log("else t2: " + t2);
 		}
-		
-		tabmatch = {};
-	 	
+		//tabmatch = {};
+		console.log("-----------------");
+		console.log(tabmatch);
       }
 
   	}
@@ -92,12 +80,8 @@ exports.view = function(req, res)
    	t3 = data.course3.length;	
    	t4 =data.course4.length;	
    	t5 = data.course5.length;	
-  	console.log("t1: " + t1);
-  	console.log("n2: " + n2);
-  	console.log("t2: " + t2);
-  	console.log("t3: " + t3);
-  
-	console.log();
+
+	console.log("Sessions added");
 	}
 	
 }

@@ -51,7 +51,7 @@
 
 
 <ul class="tabbed-list-view">
-
+{{#if course1}}
 <li>
     <ul class="list-view left-thumbs right-one-icons">
     <!-- for each course with listings-->
@@ -70,7 +70,9 @@
     {{/each}}
     </ul>
 </li>
+{{/if}}
 
+{{#if course2}}
 <li>
     <ul class="list-view left-thumbs right-one-icons">
     <!-- for each course with listings-->
@@ -89,7 +91,9 @@
     {{/each}}
     </ul>
 </li>
+{{/if}}
 
+{{#if course3}}
 <li>
     <ul class="list-view left-thumbs right-one-icons">
     <!-- for each course with listings-->
@@ -108,10 +112,12 @@
     {{/each}}
     </ul>
 </li>
+{{/if}}
 
-<!-- <li>
+{{#if course4}}
+ <li>
     <ul class="list-view left-thumbs right-one-icons">
-    {{#if course4}}
+    {{#each course4}}
         <li>
             <a href="detailview1/{{sessionid}}" class="content">
                 <h2>{{name}} </h2>
@@ -123,13 +129,16 @@
                 </div>
             </a> 
         </li>
-    {{/if}}
+    {{/each}}
     </ul>
-</li> -->
+</li> 
+{{/if}}
 
-<!--<li>
+
+{{#if course5}}
+<li>
     <ul class="list-view left-thumbs right-one-icons">
-    {{#if course5}}
+    {{#each course5}}
         <li>
             <a href="detailview1/{{sessionid}}" class="content">
                 <h2>{{name}} </h2>
@@ -141,10 +150,10 @@
                 </div>
             </a> 
         </li>
-    {{/if}}
+    {{/each}}
     </ul>
 </li>
--->
+{{/if}}
 
 </ul><!--.tabbed-list-view-->
     
