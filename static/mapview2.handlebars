@@ -12,7 +12,7 @@
 <script src="common/js/main.min.js"></script>
 
 <script>
-var session = require("../common/json/sessions.json");
+//var session = require("../common/json/sessions.json");
 $(document).ready(function() {
 
     var markers = [
@@ -20,9 +20,39 @@ $(document).ready(function() {
             id: 0,
             lat: 32.88077,
             lng: -117.238064,
-            contentString: "<div class='infowindow-container'><p class='span-50'><strong>Rachel Aarons</strong><br/>Project Manager</p><p class='span-50'><strong>Address</strong><br/><a href='https://maps.apple.com/maps?q=47.620513,-122.34861'>555 Madison Ave<br/>Seattle, WA<br/>98105</a></p></div>"
+            contentString: "<div class='infowindow-container'><a href='detailview1/1' class='content'><h2>Tayna Giambrone </h2>                <p>Location: Geisel Library</p><p> Time left: 360 min</p>                <p>Professor: Gaston Amsden</p></a></div>"
+        },
+		{
+            id: 1,
+            lat: 32.882077,
+            lng: -117.238064,
+            contentString: "<div class='infowindow-container'><a href='detailview1/4' class='content'><h2>Leisha Krob </h2><p>Location: Geisel Library</p><p> Time left: 170 min</p><p>Professor: Gaston Amsden</p></a> </div>"
+        },
+		{
+            id: 2,
+            lat: 32.8810572,
+            lng: -117.2376268,
+            contentString: "<div class='infowindow-container'><a href='detailview1/4' class='content'><h2>Angela Spencer </h2><p>Location: Geisel Library</p><p> Time left: 360 min</p><p>Professor: Gaston Amsden</p></a> </div>"
+        },
+		{
+            id: 3,
+            lat: 32.879980,
+            lng: -117.2384650,
+            contentString: "<div class='infowindow-container'><a href='detailview1/9' class='content'><h2>Jeremey Lin </h2><p>Location: Geisel Library</p><p> Time left: 170 min</p><p>Professor: Gaston Amsden</p></a> </div>"
+        },
+		{
+            id: 4,
+            lat: 32.88500045,
+            lng: -117.2370322,
+            contentString: "<div class='infowindow-container'><a href='detailview1/3' class='content'><h2>Bob Brown </h2><p>Location: Geisel Library</p><p> Time left: 360 min</p><p>Professor: Gaston Amsden</p></a> </div>"
+        },
+		{
+            id: 5,
+            lat: 32.8807932,
+            lng: -117.2389624,
+            contentString: "<div class='infowindow-container'><a href='detailview1/5' class='content'><h2>Sarah Miller </h2><p>Location: Geisel Library</p><p> Time left: 170 min</p><p>Professor: Gaston Amsden</p></a> </div>"
         }
-    ]
+    ];
     mapObj.init({
         view: "fullView",
         markers: markers
