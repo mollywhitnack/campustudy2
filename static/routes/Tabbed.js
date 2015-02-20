@@ -1,14 +1,19 @@
 var data = require("../common/json/data.json");
 var course = require("../common/json/course.json");
 
-var count = [];
 var t1 = 0;
+var t2 = 0;
+var t3 = 0;
+var t4 = 0;
+var t5 = 0;
+
 exports.view = function(req, res)
-{ 
+{ 	var tabmatch = null;
+
 	res.render('Tabbed', data);
 	for(var i = 0; i < data.owner.length; i++)
 	{
-		var tabmatch = null;
+
 	  for(var j = 0; j<data.sessions.length; j++)
 	  {	//add matching session to owner's couse
 		if( data.sessions[j].course == data.owner[i].course)
@@ -23,9 +28,10 @@ exports.view = function(req, res)
 			 "professor":data.sessions[j].professor,
 			 "sessionid": data.sessions[j].sessionid
     		 };
-    	//console.log(tabmatch);
+    	console.log("start t2: " + t2);
+    	console.log("start t3: " + t3);
 
-    	if(i == 0 )
+    	if(i == 0 && t1 ==0)
     	{
     	var n1 = data.course1.length;
       	console.log("n1 :" +  n1 + " at t1:  " + t1);
@@ -36,37 +42,44 @@ exports.view = function(req, res)
     	//console.log("pushed to course1");
     	//console.log("n: " + n1);
 		}
-    	if(i == 1 )
+    	if(i == 1 && t2 ==0)
     	{
-    	data['course2'].push(tabmatch);
+    	
+    	var n2 = data.course2.length;	
+    	console.log("n2 :" +  n2 + " at t2:  " + t2);
+    	data.course2.push(tabmatch);
     	console.log();
     	//console.log(tabmatch);
 		//console.log("pushed to course2");
 		}
-		if(i ==2 )
+		if(i ==2 && t3 ==0)
     	{
-    	data['course3'].push(tabmatch);
+    	var n3 = data.course3.length;	
+    	console.log("n3 :" +  n3 + " at t3:  " + t3);
+    	data.course3.push(tabmatch);
     	    	console.log();
     	//console.log(tabmatch);
     	//console.log("pushed to course3");
 		}
-    	if(i == 3)
+    	if(i == 3 && t4 ==0)
     	{
-    	data['course4'].push(tabmatch);
+    	var n4 = data.course4.length;
+    	data.course4.push(tabmatch);
     	    	console.log();
     	//console.log(tabmatch);
 		//console.log("pushed to course4");
 		}
-		if(i ==4 )
+		if(i ==4 && t5 ==0 )
     	{
-    	data['course5'].push(tabmatch);
+    	var n5 = data.course5.length;
+    	data.course5.push(tabmatch);
     	    	console.log();
     	//console.log(tabmatch);
     	//console.log("pushed to course5");
 		}
     	else
     	{
-
+		//console.log("else t2: " + t2);
 		}
 		
 		tabmatch = {};
@@ -75,7 +88,14 @@ exports.view = function(req, res)
 
   	}
   	t1 = n1;
+  	t2 = data.course2.length;
+   	t3 = data.course3.length;	
+   	t4 =data.course4.length;	
+   	t5 = data.course5.length;	
   	console.log("t1: " + t1);
+  	console.log("n2: " + n2);
+  	console.log("t2: " + t2);
+  	console.log("t3: " + t3);
   
 	console.log();
 	}

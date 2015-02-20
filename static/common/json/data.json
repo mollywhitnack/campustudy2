@@ -2,7 +2,7 @@
 	
 	"sessions":[
     {
-        "name": "Susan Giambrone",
+        "name": "Susan Brown",
         "course": "cse12", 
         "professor": "Gaston Amsden",
 		"location": "Geisel Library",
@@ -28,7 +28,7 @@
 		"sessionid": 2
     },
     {
-        "name": "Becca Giambrone",
+        "name": "Becca Bladorn",
         "course": "cogs120", 
         "professor": "Nannette Rita",
 		"location": "Geisel Library",
@@ -94,7 +94,7 @@
     },
     {
         "name": "Classie Donlin",
-        "course": "cse8a", 
+        "course": "cse170", 
         "professor": "Gaston Amsden",
 		"location": "Warren",
 		"timeleft":	194,

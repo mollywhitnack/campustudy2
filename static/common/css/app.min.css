@@ -278,12 +278,13 @@ a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png); 
 
 .mysessions2{
   float: center;
-  position: absolute;
+  position: fixed;
   text-align: center;
   padding-top: 0.5%;
   margin: 0%;
   bottom: 0;
   left:0;
+  z-index: 1000;
   height: 12%;
   width: 100%;
   padding:0%;
