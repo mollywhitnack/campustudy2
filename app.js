@@ -19,11 +19,48 @@ var Tabbed = require('./static/routes/Tabbed');
 var sessions = require('./static/routes/sessions');
 
 var passport = require('passport')
+  , util = require('util')
   , FacebookStrategy = require('passport-facebook').Strategy;
+//  , logger = require('morgan')
+//  , session = require('express-session')
+//  , bodyParser = require("body-parser")
+//  , cookieParser = require("cookie-parser")
+//  , methodOverride = require('method-override');
 
-
+var FACEBOOK_APP_ID = "347703798758063";
+var FACEBOOK_APP_SECRET = "3985c3bc4a4a796538dc06b84ee0b648";
 // Example route
 // var user = require('./routes/user');
+
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(obj, done) {
+  done(null, obj);
+});
+
+
+
+passport.use(new FacebookStrategy({
+    clientID: FACEBOOK_APP_ID,
+    clientSecret: FACEBOOK_APP_SECRET,
+    callbackURL: "http://localhost:3000/auth/facebook/callback"
+  },
+  function(accessToken, refreshToken, profile, done) {
+    // asynchronous verification, for effect...
+    process.nextTick(function () {
+      
+      // To keep the example simple, the user's Facebook profile is returned to
+      // represent the logged-in user.  In a typical application, you would want
+      // to associate the Facebook account with a user record in your database,
+      // and return that user instead.
+      return done(null, profile);
+    });
+  }
+));
+
+
 
 var app = express();
 
@@ -69,12 +106,17 @@ app.get('/auth/facebook', passport.authenticate('facebook'));
 // authentication process by attempting to obtain an access token.  If
 // access was granted, the user will be logged in.  Otherwise,
 // authentication has failed.
-/*app.get('/auth/facebook/callback', 
+app.get('/auth/facebook/callback', 
   passport.authenticate('facebook', { successRedirect: '/Tabbed',
-                                      failureRedirect: '/' }));*/
+                                      failureRedirect: '/' }));
 
 // Example route
 // app.get('/users', user.list);
+app.get('/logout', function(req, res){
+  req.logout();
+  res.redirect('/');
+});
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
