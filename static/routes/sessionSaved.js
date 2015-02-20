@@ -33,11 +33,11 @@ exports.view = function(req, res) {
 
     sessions["mysessions"].push(newSession);
 
-	res.render('addSession',sessions);
+	res.render('sessionSaved',sessions);
 	console.log(newSession);
 
 	}
-	res.render('addSession',sessions);
+	res.render('sessionSaved',sessions);
 
 }
 
@@ -81,7 +81,7 @@ function validateForm() {
 // get GPS location
     if (navigator.geolocation) {
 
-        //navigator.geolocation.getCurrentPosition(gettingPosition, showError);
+       // navigator.geolocation.getCurrentPosition(gettingPosition, showError);
         //return false;    /* <-- must return false for location to be retrieved, but then the session doesn't get created :( */
         if(locError == true)
         {
