@@ -32,6 +32,7 @@ h3.not-uppercase{text-transform:none}a{color:#666;text-decoration:none}p{padding
 header{display:block;position:absolute;top:0;left:0;width:100%;height:58.5px;background:#78a5ad;z-index:10}
 header .main-menu-button{display:block;position:absolute;top:15px;width:28.5px;height:28.5px;z-index:2}
 header .main-menu-button.main-menu-button-left{left:15px}
+header .main-menu-button.main-menu-button-mid{left:55px; font-size: 170%; top: 20px;}
 header .main-menu-button.main-menu-button-left a{background-position:left center}
 header .main-menu-button.main-menu-button-right{right:15px}
 header .main-menu-button.main-menu-button-right a{background-position:right center}
@@ -42,7 +43,9 @@ header .main-menu-button a.gear{background-image:url("../images/icons/gear-white
 header .main-menu-button a.plus{background-image:url("../images/icons/plus-white.png");background-size:28.5px 28.5px}
 header .main-menu-button a.course{background-image:url("../images/icons/course.png");background-size:28.5px 28.5px}
 
-header h1{color:#e6f0f1;display:block;position:absolute;top:18.05px;left:0;width:100%;text-align:center;z-index:1}
+header h1{color:#e6f0f1;display:block;position:absolute;top:18.05px;left:0;width:103%;text-align:center;z-index:1}
+
+.help{float: left; margin-right: 50%; background-color: green; background-size:50.5px 68.5px}
 
 nav.main-menu{display:block;position:absolute;top:0;left:-250px;width:250px;height:100%;padding-left:15px;padding-right:15px;background-color:#597f86;z-index:9}
 
