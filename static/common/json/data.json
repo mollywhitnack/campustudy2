@@ -1,88 +1,9 @@
 {
-	"tablist":
-	{
-    "tab":[
-    	{
-    	"name": "Tayna Giambrone",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	360,
-		"howto": "I am at 2nd floor at corner 01",
-		"GPS":0,
-		"uid":1,
-		"phone": 123456789,
-		"sessionid": 1
-    	},
-    	{
-    	"name": "Leisha Krob",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	170,
-		"howto": "I am at 2nd floor at corner",
-		"GPS":0,
-		"uid":2,
-		"phone": 123456789,
-		"sessionid": 4
-		}
-   	],
-   	"tab":[
-    	{
-    	"name": "Angela Spencer",
-        "course": "phys2a", 
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	360,
-		"howto": "I am at 2nd floor at corner 01",
-		"GPS":0,
-		"uid":1,
-		"phone": 123456789,
-		"sessionid": 4
-    	},
-    	{
-        "name": "Jeremey Lin",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	170,
-		"howto": "I am at 2nd floor at corner",
-		"extra": "lalalala",
-		"GPS":0,
-		"uid":2,
-		"phone": 123456789,
-		"sessionid": 9
-		}
-    ],
-    "tab":[
-    	{
-    	"name": "Bob Brown",
-        "course": "phys2a", 
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	360,
-		"howto": "I am at 2nd floor at corner 01",
-		"GPS":0,
-		"uid":1,
-		"phone": 123456789,
-		"sessionid": 3
-    	},
-    	{
-        "name": "Sarah Miller",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	170,
-		"howto": "I am at 2nd floor at corner",
-		"extra": "lalalala",
-		"GPS":0,
-		"uid":2,
-		"phone": 123456789,
-		"sessionid": 5
-		}
-    ]
-	},
-
+	
 	"sessions":[
     {
-        "name": "Tayna Giambrone",
-        "course": "cse8a", 
+        "name": "Susan Giambrone",
+        "course": "cse12", 
         "professor": "Gaston Amsden",
 		"location": "Geisel Library",
 		"timeleft":	360,
@@ -107,7 +28,7 @@
 		"sessionid": 2
     },
     {
-        "name": "Tayna Giambrone",
+        "name": "Becca Giambrone",
         "course": "cogs120", 
         "professor": "Nannette Rita",
 		"location": "Geisel Library",
@@ -120,7 +41,7 @@
 		"sessionid": 3
     },
     {
-        "name": "Leisha Krob",
+        "name": "Sally Krob",
         "course": "cse8a", 
         "professor": "Gaston Amsden",
 		"location": "Geisel Library",
@@ -133,7 +54,7 @@
 		"sessionid": 4
     },
     {
-        "name": "Leisha Krob",
+        "name": "Harry Potter",
         "course": "cogs120", 
         "professor": "Thu Whicker",
 		"location": "Price Center",
@@ -147,7 +68,7 @@
     },
     {
         "name": "Marylouise Wehner",
-        "course": "cse8a", 
+        "course": "cse12", 
         "professor": "Gaston Amsden",
 		"location": "CSE Basement",
 		"timeleft":	159,
@@ -159,8 +80,8 @@
 		"sessionid": 6
     },
     {
-        "name": "Becki Howerton",
-        "course": "cse8a", 
+        "name": "John Snow",
+        "course": "cse12", 
         "professor": "Gaston Amsden",
 		"location": "Geisel Library",
 		"timeleft":	12,
@@ -185,7 +106,7 @@
 		"sessionid": 8
     },
 	{
-        "name": "Becki Howerton",
+        "name": "Nicolas Tesla",
         "course": "phys2a", 
         "professor": "Gaston Amsden",
 		"location": "Geisel Library",
@@ -197,7 +118,7 @@
 		"sessionid": 9
     },
 	{
-        "name": "Becki Howerton",
+        "name": "Hilary Duff",
         "course": "CHEM6A", 
         "professor": "Jung Wyant",
 		"location": "Geisel Library",
@@ -243,88 +164,12 @@
     }
     ],
 
+    "course1":[],
+    "course2":[],
+    "course3":[], 
+    "course4":[],
+    "course5":[]
 
-
-     "cse12":[
-    {
-    	"name": "Tayna Giambrone",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	360,
-		"howto": "I am at 2nd floor at corner 01",
-		"GPS":0,
-		"uid":1,
-		"phone": 123456789,
-		"sessionid": 1
-    },
-
-    {   "name": "Leisha Krob",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	170,
-		"howto": "I am at 2nd floor at corner",
-		"GPS":0,
-		"uid":2,
-		"phone": 123456789,
-		"sessionid": 4
-	}
-
-    ],
-
-    "phys2a":[
-    {
-    	"name": "Angela Spencer",
-        "course": "phys2a", 
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	360,
-		"howto": "I am at 2nd floor at corner 01",
-		"GPS":0,
-		"uid":1,
-		"phone": 123456789,
-		"sessionid": 4
-    },
-    {
-        "name": "Jeremey Lin",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	170,
-		"howto": "I am at 2nd floor at corner",
-		"extra": "lalalala",
-		"GPS":0,
-		"uid":2,
-		"phone": 123456789,
-		"sessionid": 9
-	}
-    ],
-
-    "cogs120":[
-    {
-    	"name": "Bob Brown",
-        "course": "phys2a", 
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	360,
-		"howto": "I am at 2nd floor at corner 01",
-		"GPS":0,
-		"uid":1,
-		"phone": 123456789,
-		"sessionid": 3
-    },
-    {
-        "name": "Sarah Miller",
-        "professor": "Gaston Amsden",
-		"location": "Geisel Library",
-		"timeleft":	170,
-		"howto": "I am at 2nd floor at corner",
-		"extra": "lalalala",
-		"GPS":0,
-		"uid":2,
-		"phone": 123456789,
-		"sessionid": 5}
-
-
-    ]
 }
 
 

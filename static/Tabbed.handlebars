@@ -54,11 +54,10 @@
 
 <ul class="tabbed-list-view">
 
-<!-- For each tab-->
 <li>
     <ul class="list-view left-thumbs right-one-icons">
     <!-- for each course with listings-->
-    {{#each cse12}}
+    {{#each course1}}
         <li>
             <a href="detailview1/{{sessionid}}" class="content">
                 <h2>{{name}} </h2>
@@ -74,9 +73,10 @@
     </ul>
 </li>
 
- <li>
+<li>
     <ul class="list-view left-thumbs right-one-icons">
-        {{#each phys2a}}
+    <!-- for each course with listings-->
+    {{#each course2}}
         <li>
             <a href="detailview1/{{sessionid}}" class="content">
                 <h2>{{name}} </h2>
@@ -86,16 +86,17 @@
                 <div class="list-view-icons">
                     <span class="icon-right-arrow">&nbsp;</span>
                 </div>
-            </a>
+            </a> 
         </li>
-        {{/each}}
+    {{/each}}
     </ul>
 </li>
 
 <li>
     <ul class="list-view left-thumbs right-one-icons">
-        {{#each cogs120}}
-        <li> 
+    <!-- for each course with listings-->
+    {{#each course3}}
+        <li>
             <a href="detailview1/{{sessionid}}" class="content">
                 <h2>{{name}} </h2>
                 <p>Location: {{location}}</p>
@@ -104,11 +105,48 @@
                 <div class="list-view-icons">
                     <span class="icon-right-arrow">&nbsp;</span>
                 </div>
-            </a>
+            </a> 
         </li>
-        {{/each}}
+    {{/each}}
     </ul>
 </li>
+
+<!-- <li>
+    <ul class="list-view left-thumbs right-one-icons">
+    {{#if course4}}
+        <li>
+            <a href="detailview1/{{sessionid}}" class="content">
+                <h2>{{name}} </h2>
+                <p>Location: {{location}}</p>
+                <p> Time left: {{timeleft}}</p>
+                <p>Professor: {{professor}}</p>
+                <div class="list-view-icons">
+                    <span class="icon-right-arrow">&nbsp;</span>
+                </div>
+            </a> 
+        </li>
+    {{/if}}
+    </ul>
+</li> -->
+
+<!--<li>
+    <ul class="list-view left-thumbs right-one-icons">
+    {{#if course5}}
+        <li>
+            <a href="detailview1/{{sessionid}}" class="content">
+                <h2>{{name}} </h2>
+                <p>Location: {{location}}</p>
+                <p> Time left: {{timeleft}}</p>
+                <p>Professor: {{professor}}</p>
+                <div class="list-view-icons">
+                    <span class="icon-right-arrow">&nbsp;</span>
+                </div>
+            </a> 
+        </li>
+    {{/if}}
+    </ul>
+</li>
+-->
 
 </ul><!--.tabbed-list-view-->
     
