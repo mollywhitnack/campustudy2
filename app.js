@@ -107,8 +107,8 @@ app.get('/auth/facebook', passport.authenticate('facebook'));
 // access was granted, the user will be logged in.  Otherwise,
 // authentication has failed.
 app.get('/auth/facebook/callback', 
-  passport.authenticate('facebook', { successRedirect: '../../../Tabbed',
-                                      failureRedirect: '../../../' }));
+  passport.authenticate('facebook', { successRedirect: '/Tabbed',
+                                      failureRedirect: '/' }));
 
 // Example route
 // app.get('/users', user.list);
