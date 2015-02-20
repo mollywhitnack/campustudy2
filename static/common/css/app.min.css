@@ -31,8 +31,8 @@ h3.not-uppercase{text-transform:none}a{color:#666;text-decoration:none}p{padding
 
 header{display:block;position:absolute;top:0;left:0;width:100%;height:58.5px;background:#78a5ad;z-index:10}
 header .main-menu-button{display:block;position:absolute;top:15px;width:28.5px;height:28.5px;z-index:2}
-header .main-menu-button.main-menu-button-left{left:15px}
-header .main-menu-button.main-menu-button-mid{left:55px; font-size: 170%; top: 20px;}
+header .main-menu-button.main-menu-button-left{left:15px;}
+header .main-menu-button.main-menu-button-mid{left:15px; width: 15%; font-size: 170%; top: 20px}
 header .main-menu-button.main-menu-button-left a{background-position:left center}
 header .main-menu-button.main-menu-button-right{right:15px}
 header .main-menu-button.main-menu-button-right a{background-position:right center}
@@ -43,7 +43,7 @@ header .main-menu-button a.gear{background-image:url("../images/icons/gear-white
 header .main-menu-button a.plus{background-image:url("../images/icons/plus-white.png");background-size:28.5px 28.5px}
 header .main-menu-button a.course{background-image:url("../images/icons/course.png");background-size:28.5px 28.5px}
 
-header h1{color:#e6f0f1;display:block;position:absolute;top:18.05px;left:0;width:103%;text-align:center;z-index:1}
+header h1{color:#e6f0f1;display:block;position:absolute;top:18.05px;left:0;width:100%;text-align:center;z-index:1}
 
 .help{float: left; margin-right: 50%; background-color: green; background-size:50.5px 68.5px}
 
@@ -196,13 +196,15 @@ ul.list-view-tasks li.overdue.complete .date{color:#ccc}
 .detail-view-header.with-action-panel .content{padding-right:82.5px}
 
 
+.detail-view-header .detail-view-header-about .logo2 img{width: 30px;}
 
 .detail-view-header.left-thumb .content{min-height:45px;padding-left:1.8%; background-color: white;}
 .detail-view-header.left-thumb .content a{padding: 15px; border-style: solid; color: white; background-color: gray; border-style: solid; }
 
 
+
 .detail-view-header.detail-view-header-about{text-align:center}
-.detail-view-header.detail-view-header-about .description{text-align:left;padding-top:22.5px;line-height:1.3em}
+.detail-view-header.detail-view-header-about .description{text-align:left;padding-top:22.5px;line-height:1.3em;}
 .detail-view-header .detail-view-action-panel{overflow:hidden;*zoom:1;display:block;position:absolute;right:0;top:0;width:62px;background-color:white;padding:1px;padding-bottom:0;z-index:5}
 .detail-view-header .detail-view-action-panel>a{display:block;position:relative;margin-bottom:1px;width:60px;height:60px;background-size:60px 60px;background-repeat:no-repeat}
 .detail-view-header .detail-view-action-panel>a.action-note{background-image:url(../images/icons/tile-note.png)}.detail-view-header .detail-view-action-panel>a.action-map{background-image:url(../images/icons/tile-map.png)}
@@ -361,10 +363,11 @@ button.Zebra_DatePicker_Icon_Disabled{background-image:url("calendar-disabled.pn
 .splash .app-content .splash-screen-wrapper{display:block;position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:200px;margin:auto}
 .splash .app-content .splash-screen-wrapper .content{display:block;position:relative;width:100%;height:100%;text-align:center;color:white}
 .splash .app-content .splash-screen-wrapper .content .login{display:block;position:relative;width:100%;height:60%;text-align:center;color:white; background-color: none; padding-left: 33.33%; padding-top: 5%}
-.splash .app-content .splash-screen-wrapper .content .login .facebookbutton{display:block;position:relative;width:50%;height:50%;float: center; text-align:center; font-size: 110%; color:black; background-color: white; padding: 3%;}
+.splash .app-content .splash-screen-wrapper .content .login .facebookbutton{display:block;position:relative;width:50%;height:50%;
+	float: center; text-align:center; font-size: 110%; color:black; background-color: white; padding: 3%;}
 .splash .app-content .splash-screen-wrapper .content .logo{display:block;margin-left: auto;
 	margin-right:none;position:;width:100%;height:60%;float: ;padding:;}
-	.splash .app-content .splash-screen-wrapper .content .logo img{ width:75%; float: center;}
+.splash .app-content .splash-screen-wrapper .content .logo img{ width:75%; float: center;}
 .splash .app-content .splash-screen-wrapper .content .tagline{display:block;position:relative;width:;height:;text-align:center;color:white;padding-top: 3%;margin-right: auto;margin-left: auto}
 
 
