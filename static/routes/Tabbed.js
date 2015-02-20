@@ -1,37 +1,82 @@
 var data = require("../common/json/data.json");
 var course = require("../common/json/course.json");
 
+var ownerlist = [[]];
+var courselist1 = [];
+var courselist2 = [];
+var courselist3 = [];
+var courselist4 = [];
+var courselist5 = [];
+
+
 exports.view = function(req, res)
 { 
-	console.log(course);
+	// console.log(course);
 	res.render('Tabbed', data);
 	//console.log(data);
 	//var tCourse = req.params.course;
 	//var listing[];
-	for(var i = 0; i < data.sessions.length; i++)
-	{for(var j = 0; j<data.owner.length; j++)
-		if( data.sessions[i].course == data.owner[j].course)
+	for(var i = 0; i < data.owner.length; i++)
+	{
+	console.log("--------Tab------: " + data.owner[i].course);
+	var tablist = data.owner[i].course;
+	  for(var j = 0; j<data.sessions.length; j++)
+	  {	//add matching session to owner's couse
+		if( data.sessions[j].course == data.owner[i].course)
 		{
-		 console.log("Session: "+ data.sessions[i].course + " Owner: " + data.owner[j].course);
-		 console.log("id: " + data.sessions[i].sessionid);
-		// function sessionList(data.sessions[i].course, data.sessions[i].sessionid);
-		 //return data.sessions[i].name;
-		 /*res.render('Tabbed',
-			{
-			'tName': data.sessions[i].name,
-			'tLocation': data.sessions[i].location,
-			'tProfessor': data.sessions[i].professor
-			});*/
-		}
+		 //console.log("Session course: "+ data.sessions[j].course);
+		 console.log("Match to owner course: " + data.owner[i].course);
+		 console.log("Name: " +data.sessions[j].name);
+		 console.log("Location: " +data.sessions[j].location);
+		 console.log("Timeleft: " +data.sessions[j].timeleft);
+		 console.log("professor: " +data.sessions[j].professor);
+		 courselist1.push(data.sessions[j].name);
+		 console.log("courselist1: " + courselist1);
+		 console.log("-------sessionMatch---------");
+
+		 	/*var sessionMatch = 
+		 	{	
+		 	'course': data.sessions[j].course,
+			'name' : data.sessions[j].name,
+		 	'location': data.sessions[j].location,
+		 	'timeleft': data.sessions[j].timeleft,
+		 	'professor':data.sessions[j].professor
+    		};
+    		console.log(sessionMatch);
+    		data['newcourselist'].push(sessionMatch);*/
+	 	}
+      }
+	console.log("------ end ------");
+	console.log();
 	}
 
 }
 
-/*function session list()
+
+
+
+/*function sessionList(tcourse, tid, tname, tlocation, ttime, tprof)
 {
+	if (courselist1[0]== undefined || )
+	{
+		console.log("undefined 1, add " + tcourse);
+		courselist1[0]= tcourse;
+	}
+	else if(courselist2[0] == undefined)
+		console.log("undefined 2, add " + tcourse);
+		courselist2[0] = tcourse;
+	console.log("tcourse: " + tcourse);
+	console.log("courselist 1: " + courselist1);
+	console.log("courselist 2: " + courselist2);
+	console.log("courselist1 size: " + courselist1[0]);
 
+	/*res.render('Tabb=ed',
+	{
+	'dName': data.sessions[i].name
 
-}*/
+	});
+
+}
 
 
 /*function initializePage() 

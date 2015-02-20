@@ -51,7 +51,8 @@
 
 
 <ul class="tabbed-list-view">
- <!-- for each session, if {{couse}} == correct class, do this -->   
+
+ <!-- For each course in owner-->
 <li>
     <ul class="list-view left-thumbs right-one-icons">
     <!-- for each course with listings-->
@@ -68,12 +69,10 @@
             </a> 
         </li>
     {{/each}}
-<!-- End listing for specific course -->
     </ul>
 </li>
 
-
-<li>
+ <li>
     <ul class="list-view left-thumbs right-one-icons">
         {{#each phys2a}}
         <li>
@@ -94,12 +93,7 @@
 <li>
     <ul class="list-view left-thumbs right-one-icons">
         {{#each cogs120}}
-        <li>
-            <!--<div class="thumbs">
-                <a href="#" class="thumb thumb-1"><img class="thumb" src="common/images/icons/tile-phone.png" ></a>
-                <a href="#" class="thumb thumb-2"><img class="thumb" src="common/images/icons/tile-email.png" ></a>
-                <img class="thumb thumb-3" src="common/images/placeholders/contact-1.png">
-            </div><! .thumbs -->
+        <li> 
             <a href="detailview1/{{sessionid}}" class="content">
                 <h2>{{name}} </h2>
                 <p>Location: {{location}}</p>
@@ -114,9 +108,6 @@
     </ul>
 </li>
 
-
-
-
 </ul><!--.tabbed-list-view-->
     
 </div><!--#app-content-->
@@ -126,9 +117,9 @@
         <div class="footer2">My Sessions</div>
       </a>
     </div>
-</div><!--#app-wrapper-->
 
-
+</div>
+<!--#app-wrapper-->
 
 </body>
 </html>

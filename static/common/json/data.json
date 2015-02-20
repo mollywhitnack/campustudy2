@@ -147,16 +147,19 @@
 	"owner" :[
     {
         "course": "cse12", 
-        "professor": "Gaston Amsden"
+        "professor": "Gaston Amsden",
+        "oid": "1"
 
     },
     {
         "course": "phys2a", 
-        "professor": "Monte Hames"
+        "professor": "Monte Hames",
+        "oid": "2"
     },
     {
         "course": "cogs120", 
-        "professor": "Nannette Rita"
+        "professor": "Nannette Rita",
+        "oid": "3"
     }
     ],
 
@@ -240,7 +243,6 @@
 
 
     ]
-
 }
 
 
