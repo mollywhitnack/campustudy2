@@ -1,14 +1,6 @@
 var data = require("../common/json/data.json");
 var course = require("../common/json/course.json");
 
-var ownerlist = [[]];
-var courselist1 = [];
-var courselist2 = [];
-var courselist3 = [];
-var courselist4 = [];
-var courselist5 = [];
-
-
 exports.view = function(req, res)
 { 
 	// console.log(course);
@@ -19,31 +11,30 @@ exports.view = function(req, res)
 	for(var i = 0; i < data.owner.length; i++)
 	{
 	console.log("--------Tab------: " + data.owner[i].course);
-	var tablist = data.owner[i].course;
+	var tab = 
+	{
+		"tablist": data.owner[i].course
+
+	};
+	console.log("Tab List: ");
+	console.log(tab);
 	  for(var j = 0; j<data.sessions.length; j++)
 	  {	//add matching session to owner's couse
 		if( data.sessions[j].course == data.owner[i].course)
 		{
-		 //console.log("Session course: "+ data.sessions[j].course);
-		 console.log("Match to owner course: " + data.owner[i].course);
-		 console.log("Name: " +data.sessions[j].name);
-		 console.log("Location: " +data.sessions[j].location);
-		 console.log("Timeleft: " +data.sessions[j].timeleft);
-		 console.log("professor: " +data.sessions[j].professor);
-		 courselist1.push(data.sessions[j].name);
-		 console.log("courselist1: " + courselist1);
+
 		 console.log("-------sessionMatch---------");
 
-		 	/*var sessionMatch = 
-		 	{	
-		 	'course': data.sessions[j].course,
-			'name' : data.sessions[j].name,
-		 	'location': data.sessions[j].location,
-		 	'timeleft': data.sessions[j].timeleft,
-		 	'professor':data.sessions[j].professor
-    		};
-    		console.log(sessionMatch);
-    		data['newcourselist'].push(sessionMatch);*/
+		 tabmatch = 
+		 {	
+		 "course": data.sessions[j].course,
+		 "name" : data.sessions[j].name,
+		 "location": data.sessions[j].location,
+		 "timeleft": data.sessions[j].timeleft,
+		 "professor":data.sessions[j].professor
+    	  };
+    		console.log(tabmatch);
+    		//data['newcourselist'].push(sessionMatch);
 	 	}
       }
 	console.log("------ end ------");
@@ -53,6 +44,16 @@ exports.view = function(req, res)
 }
 
 
+
+
+		 //console.log("Session course: "+ data.sessions[j].course);
+		 //console.log("Match to owner course: " + data.owner[i].course);
+		 //console.log("Name: " +data.sessions[j].name);
+		 /*console.log("Location: " +data.sessions[j].location);
+		 console.log("Timeleft: " +data.sessions[j].timeleft);
+		 console.log("professor: " +data.sessions[j].professor);
+		 courselist1.push(data.sessions[j].name);
+		 console.log("courselist1: " + courselist1);*/
 
 
 /*function sessionList(tcourse, tid, tname, tlocation, ttime, tprof)
