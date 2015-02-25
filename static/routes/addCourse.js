@@ -17,9 +17,14 @@ exports.view = function(req, res) {
 			"professor": professor,	
     };
 
+    if (data.owner.length < 5)
+    {
     courses["owner"].push(newCourse);
-
 	console.log(newCourse);
+    }
+    else
+    {
+        console.log("Can't add 6 courses")};
     }
 
   res.render('addCourse',courses);

@@ -9,24 +9,29 @@ var t5 = 0;
 
 exports.view = function(req, res)
 { 	var tabmatch = null;
+	course1= {};
+	course2 = {};
+	course3= {};
+	course4 = {};
+	course5= {};
+
+	tab1= {};
+	tab2 = {};
+	tab3= {};
+	tab4 = {};
+	tab5= {};
 
 	res.render('Tabbed', data);
 	for(var i = 0; i < data.owner.length; i++)
-	{
-		course1= {};
-		course2 = {};
-		course3= {};
-		course4 = {};
-		course5= {};
-		
+	{	
 	console.log("owner course " + i + ": "+ data.owner[i].course);
 	  for(var j = 0; j<data.sessions.length; j++)
 	  {	//add matching session to owner's couse
 		//create new container for each course
-		//data.tab1.push(course1) //for each
+		/*data.tab1.push(course1); 
+		data.tab2.push(course2);*/
 		if( data.sessions[j].course == data.owner[i].course)
 		{
-			console.log("owner course " + i + ": "+ data.owner[i].course);
 			console.log("session course " + j + ": "+ data.sessions[j].course);
 			 //console.log("owner course: " + data.owner[i].course);
 			 //console.log("Session course :" + data.sessions[j].course);
@@ -40,9 +45,11 @@ exports.view = function(req, res)
 			 "sessionid": data.sessions[j].sessionid
     		 };
 
+
 		if(i == 0 && t1 ==0)
     	{
     	var n1 = data.course1.length;
+    	//data.tab1.push(tabmatch);
     	data.course1.push(tabmatch);
     	console.log("i =0,  j=" + j);
     	console.log(tabmatch);
@@ -77,15 +84,15 @@ exports.view = function(req, res)
 		}
     	else
     	{
-		console.log("else no i");
+		//console.log("else no i");
 		}
 
 		//tabmatch = {};
 		//console.log("-----------------");
 		//console.log(tabmatch);
-		//console.log(tabmatch);
+		//console.log(tabmatch);*/
       }
-      console.log("else no match");
+      //console.log("else no match");
 
   	}
   	
