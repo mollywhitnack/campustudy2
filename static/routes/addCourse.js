@@ -21,9 +21,10 @@ exports.view = function(req, res) {
     courses["owner"].push(newCourse);
 
 	console.log(newCourse);
-    }
+    }else if (courses.owner.length > 5){
+
+	}
 
 
   res.render('addCourse',courses);
 };
-
