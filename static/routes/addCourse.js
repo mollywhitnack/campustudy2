@@ -12,21 +12,17 @@ exports.view = function(req, res) {
     var course = req.query.course;
     var professor = req.query.professor;
     if(course != null && course != "") {
-		var newCourse = {
-				"course": course,
-				"professor": professor,	
-		};
-	
-    if (courses.owner.length < 5)
-    {
+
+    var newCourse = {
+			"course": course,
+			"professor": professor,	
+    };
+
     courses["owner"].push(newCourse);
+
 	console.log(newCourse);
     }
-    else
-    {
-        console.log("Can't add 6 courses");
-    }
-	}
+
 
   res.render('addCourse',courses);
 };
