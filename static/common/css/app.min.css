@@ -31,6 +31,7 @@ h3.not-uppercase{text-transform:none}a{color:#666;text-decoration:none}p{padding
 	transition-timing-function:linear;
 	display:block;position:absolute;
 	margin: 0;
+	margin-bottom: 180px;
 	height:auto;min-height:100%;width:100%;top:0;left:0}
 
 .app-wrapperT{-webkit-transition-property:left;-moz-transition-property:left;
