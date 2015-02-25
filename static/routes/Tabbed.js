@@ -13,12 +13,23 @@ exports.view = function(req, res)
 	res.render('Tabbed', data);
 	for(var i = 0; i < data.owner.length; i++)
 	{
-
+		course1= {};
+		course2 = {};
+		course3= {};
+		course4 = {};
+		course5= {};
+		
+	console.log("owner course " + i + ": "+ data.owner[i].course);
 	  for(var j = 0; j<data.sessions.length; j++)
 	  {	//add matching session to owner's couse
+		//create new container for each course
+		//data.tab1.push(course1) //for each
 		if( data.sessions[j].course == data.owner[i].course)
 		{
-
+			console.log("owner course " + i + ": "+ data.owner[i].course);
+			console.log("session course " + j + ": "+ data.sessions[j].course);
+			 //console.log("owner course: " + data.owner[i].course);
+			 //console.log("Session course :" + data.sessions[j].course);
 			 var tabmatch = 
 		 	 {	
 			 "course": data.sessions[j].course,
@@ -29,8 +40,7 @@ exports.view = function(req, res)
 			 "sessionid": data.sessions[j].sessionid
     		 };
 
-
-    	if(i == 0 && t1 ==0)
+		if(i == 0 && t1 ==0)
     	{
     	var n1 = data.course1.length;
     	data.course1.push(tabmatch);
@@ -67,21 +77,25 @@ exports.view = function(req, res)
 		}
     	else
     	{
-		//console.log("else t2: " + t2);
+		console.log("else no i");
 		}
+
 		//tabmatch = {};
-		console.log("-----------------");
-		console.log(tabmatch);
+		//console.log("-----------------");
+		//console.log(tabmatch);
+		//console.log(tabmatch);
       }
+      console.log("else no match");
 
   	}
+  	
   	t1 = n1;
   	t2 = data.course2.length;
    	t3 = data.course3.length;	
    	t4 =data.course4.length;	
-   	t5 = data.course5.length;	
+   	t5 = data.course5.length;
 
-	console.log("Sessions added");
+	
 	}
 	
 }

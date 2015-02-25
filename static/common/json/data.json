@@ -106,7 +106,7 @@
 		"sessionid": 8
     },
 	{
-        "name": "Nicolas Tesla",
+        "name": "Nikola Tesla",
         "course": "phys2a", 
         "professor": "Gaston Amsden",
 		"location": "Geisel Library",
@@ -118,8 +118,8 @@
 		"sessionid": 9
     },
 	{
-        "name": "Hilary Duff",
-        "course": "CHEM6A", 
+        "name": "Marie Curie",
+        "course": "chem6a", 
         "professor": "Jung Wyant",
 		"location": "Geisel Library",
 		"timeleft":	13,
