@@ -22,11 +22,35 @@ h1.event{color:#954118;padding-bottom:15px}
 h2{font-size:155%;padding-bottom:.5em;color:black}h3{font-weight:bolder;text-transform:uppercase;font-size:100%;padding-bottom:1em;color:black}
 h3.not-uppercase{text-transform:none}a{color:#666;text-decoration:none}p{padding-bottom:7.5px;line-height:1.3em}p a{color:#7ba8b0}
 .content p:last-child{padding-bottom:0}
-.app-wrapper{-webkit-transition-property:left;-moz-transition-property:left;-o-transition-property:left;transition-property:left;
-	-webkit-transition-duration:.2s;-moz-transition-duration:.2s;-o-transition-duration:.2s;transition-duration:.2s;-webkit-transition-timing-function:linear;
-	-moz-transition-timing-function:linear;-o-transition-timing-function:linear;transition-timing-function:linear;display:block;position:absolute;height:auto;min-height:100%;width:100%;top:0;left:0}
+.app-wrapper{-webkit-transition-property:left;-moz-transition-property:left;
+	-o-transition-property:left;transition-property:left;
+	-webkit-transition-duration:.2s;-moz-transition-duration:.2s;
+	-o-transition-duration:.2s;transition-duration:.2s;
+	-webkit-transition-timing-function:linear;
+	-moz-transition-timing-function:linear;-o-transition-timing-function:linear;
+	transition-timing-function:linear;
+	display:block;position:absolute;
+	margin: 0;
+	height:auto;min-height:100%;width:100%;top:0;left:0}
+
+.app-wrapperT{-webkit-transition-property:left;-moz-transition-property:left;
+	-o-transition-property:left;transition-property:left;
+	-webkit-transition-duration:.2s;-moz-transition-duration:.2s;
+	-o-transition-duration:.2s;transition-duration:.2s;
+	-webkit-transition-timing-function:linear;
+	-moz-transition-timing-function:linear;-o-transition-timing-function:linear;
+	transition-timing-function:linear;
+	display:block;position:absolute;
+	/*margin: 0*/
+	margin-bottom: 180px;
+	height:auto;min-height:100%;width:100%;top:0;left:0}
+
+.app-wrapperT.menu-open{left:250px}
+
 .app-wrapper.menu-open{left:250px}
-.app-content{display:block;position:relative;min-height:100%;padding-top:58.5px;z-index:1}
+
+.app-content{display:block;position:relative;
+	min-height:100%;padding-top:58.5px;z-index:1}
 .splash-screen .app-content{padding-top:0}
 
 header{display:block;position:absolute;top:0;left:0;width:100%;height:58.5px;background:#78a5ad;z-index:10}
@@ -277,12 +301,11 @@ a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png); 
 
 
 .mysessions2{
-  float: center;
-  position: absolute;
+  /*float: center;*/
+  position: fixed;
   text-align: center;
-  margin: 0%;
-  bottom: 0%;
   left:0;
+  bottom: 0;
   z-index: 1000;
   height: 10%;
   width: 100%;

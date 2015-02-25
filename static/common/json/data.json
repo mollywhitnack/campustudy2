@@ -27,6 +27,47 @@
 		"phone": 123456789,
 		"sessionid": 2
     },
+
+        {
+        "name": "Phillip Giambrone",
+        "course": "phys2a", 
+        "professor": "Monte Hames",
+		"location": "Geisel Library",
+		"timeleft":	160,
+		"extra": "lalalala",
+		"howto": "I am at 2nd floor at corner 02",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789,
+		"sessionid": 2
+    },
+     {
+        "name": "Helga Giambrone",
+        "course": "phys2a", 
+        "professor": "Monte Hames",
+		"location": "Geisel Library",
+		"timeleft":	160,
+		"extra": "lalalala",
+		"howto": "I am at 2nd floor at corner 02",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789,
+		"sessionid": 2
+    },
+
+            {
+        "name": "molly Giambrone",
+        "course": "phys2a", 
+        "professor": "Monte Hames",
+		"location": "Geisel Library",
+		"timeleft":	160,
+		"extra": "lalalala",
+		"howto": "I am at 2nd floor at corner 02",
+		"GPS":0,
+		"uid":1,
+		"phone": 123456789,
+		"sessionid": 2
+    },
     {
         "name": "Becca Bladorn",
         "course": "cogs120", 
