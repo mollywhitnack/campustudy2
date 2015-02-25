@@ -302,7 +302,7 @@ a.action-deletecourse{background-image:url(../images/icons/tile-closeloss.png); 
 
 .mysessions2{
   /*float: center;*/
-  position: absolute;
+  position: fixed;
   text-align: center;
   left:0;
   bottom: 0;
