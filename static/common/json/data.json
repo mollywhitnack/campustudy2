@@ -29,7 +29,7 @@
     },
 
         {
-        "name": "Phillip Giambrone",
+        "name": "Phillip Green",
         "course": "phys2a", 
         "professor": "Monte Hames",
 		"location": "Geisel Library",
@@ -42,8 +42,8 @@
 		"sessionid": 2
     },
      {
-        "name": "Helga Giambrone",
-        "course": "phys2a", 
+        "name": "Helga Belga",
+        "course": "Phys2a", 
         "professor": "Monte Hames",
 		"location": "Geisel Library",
 		"timeleft":	160,
@@ -56,8 +56,8 @@
     },
 
             {
-        "name": "molly Giambrone",
-        "course": "phys2a", 
+        "name": "Lady Gaga",
+        "course": "Cse170", 
         "professor": "Monte Hames",
 		"location": "Geisel Library",
 		"timeleft":	160,
@@ -69,7 +69,7 @@
 		"sessionid": 2
     },
     {
-        "name": "Becca Bladorn",
+        "name": "Hermoine Grager",
         "course": "cogs120", 
         "professor": "Nannette Rita",
 		"location": "Geisel Library",
@@ -200,11 +200,14 @@
     ],
 
 
-    "course1":[],
-    "course2":[],
-    "course3":[], 
-    "course4":[],
-    "course5":[]
+
+	"course1" :[],
+	"course2" :[],
+	"course3" :[],
+	"course4" :[],
+	"course5" :[]
+
+   
 
 
 }

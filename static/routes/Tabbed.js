@@ -7,34 +7,25 @@ var t3 = 0;
 var t4 = 0;
 var t5 = 0;
 
+
 exports.view = function(req, res)
-{ 	var tabmatch = null;
-	course1= {};
-	course2 = {};
-	course3= {};
-	course4 = {};
-	course5= {};
-
-	tab1= {};
-	tab2 = {};
-	tab3= {};
-	tab4 = {};
-	tab5= {};
-
+{ 
+	var tabmatch = null;
 	res.render('Tabbed', data);
 	for(var i = 0; i < data.owner.length; i++)
 	{	
+    console.log("------------------------");
+	console.log("ownerlength " + data.owner.length);
+	console.log("------------------------");
 	console.log("owner course " + i + ": "+ data.owner[i].course);
+	console.log("------------------------");
 	  for(var j = 0; j<data.sessions.length; j++)
-	  {	//add matching session to owner's couse
-		//create new container for each course
-		/*data.tab1.push(course1); 
-		data.tab2.push(course2);*/
+	  {	
 		if( data.sessions[j].course == data.owner[i].course)
 		{
-			console.log("session course " + j + ": "+ data.sessions[j].course);
-			 //console.log("owner course: " + data.owner[i].course);
-			 //console.log("Session course :" + data.sessions[j].course);
+			console.log("--------Match----------------");
+			console.log(data.owner[i].course);
+			console.log("-----------------------------");
 			 var tabmatch = 
 		 	 {	
 			 "course": data.sessions[j].course,
@@ -45,8 +36,7 @@ exports.view = function(req, res)
 			 "sessionid": data.sessions[j].sessionid
     		 };
 
-
-		if(i == 0 && t1 ==0)
+			if(i == 0 && t1 ==0)
     	{
     	var n1 = data.course1.length;
     	//data.tab1.push(tabmatch);
@@ -134,23 +124,16 @@ exports.view = function(req, res)
 	console.log("courselist 1: " + courselist1);
 	console.log("courselist 2: " + courselist2);
 	console.log("courselist1 size: " + courselist1[0]);
-
 	/*res.render('Tabb=ed',
 	{
 	'dName': data.sessions[i].name
-
 	});
-
 }
-
-
 /*function initializePage() 
 {
   console.log("Javascript connected!");
   console.log("friend name", $(this).text());
 }
-
-
 function findCourse(sessions)
 {
 	if(course == "cse12")
@@ -160,5 +143,4 @@ function findCourse(sessions)
 	else {
 		console.log(course+ " not known for anagramming.");
 	}
-
 }*/
