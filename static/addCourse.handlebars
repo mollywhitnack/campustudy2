@@ -11,7 +11,20 @@
 <script src="./common/js/zebra_datepicker.min.js"></script>
 <script src="./common/js/jquery.nouislider.min.js"></script>
 <script src="./common/js/main.min.js"></script>
-<script src="./routes/addCourse.js"></script>
+<script>
+function validateForm() {
+	console.log("validating form...");   
+    if (document.forms["addcourse"]["course"].value == null || document.forms["addcourse"]["course"].value == "") {
+        alert("You must enter a course ID");
+        return false;
+    }
+    if (document.forms["addcourse"]["professor"].value == null || document.forms["addcourse"]["professor"].value == "") {
+        alert("Please enter professor's name");
+        return false;
+    }
+}
+
+</script>
 
 </head>
 
