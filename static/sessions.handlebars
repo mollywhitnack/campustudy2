@@ -33,7 +33,7 @@
 <form>
 
 
-
+{{#if mysessions}}
 {{#each mysessions}}
 <section class="border-bottom">
 	<div class="content">
@@ -53,6 +53,9 @@
 	</div><!-- .content -->
 </section>
 {{/each}}
+{{else}}
+<div class = "noCourses"> Plese add a study session for other students to see </div>
+{{/if}}
 
 
 

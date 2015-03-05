@@ -35,15 +35,14 @@
 
 
 <div class="app-content">
+{{#if owner}}
 <div class="tabbed-list-view-nav">
+
 {{#each owner}}
 <a href="#" class="span-20"> {{course}}</a>
 {{/each}}
-<!-- <div class="tabbed-list-view-nav-arrow">&nbsp;</div>-->
+
 </div>
-
-
-
 
 <div class="detail-view-header left-thumb with-action-panel">
     <div class="content">
@@ -51,9 +50,6 @@
            <!-- <a href="#" class="action-map open-modal">&nbsp;</a></a>-->
     </div><!--.content-->
 </div><!--.detail-view-header-->
-
-
-
 
 <ul class="tabbed-list-view">
 {{#if course1}}
@@ -162,11 +158,13 @@
 {{/if}}
 
 </ul><!--.tabbed-list-view-->
-    
+
+{{else}}
+<div class = "noCourses"> Please add a course to view currents study sessions </div>
+{{/if}} 
 </div><!--#app-content-->
 
 </div><!-- app wrapper-->
-
 </div>
 
 <div class = "mysessions2">
@@ -174,6 +172,7 @@
         <div class="footer2" >My Sessions</div>
     </a>
 </div>
+
 
 </body>
 </html>
