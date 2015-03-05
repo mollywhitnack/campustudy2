@@ -11,20 +11,31 @@ exports.view = function(req, res) {
 	// });
     var course = req.query.course;
     var professor = req.query.professor;
-    if(course != null && course != "") {
-
+    if((course != null && course != "") && courses.owner.length != 5) {
+    
     var newCourse = {
-			"course": course,
+			"course": course.toLowerCase().replace(/\s+/g, ''),
 			"professor": professor,	
     };
-
+ 
     courses["owner"].push(newCourse);
 
 	console.log(newCourse);
-    }else if (courses.owner.length > 5){
-
-	}
+    }
 
 
   res.render('addCourse',courses);
-};
+}
+
+function validateForm() {
+	
+	console.log("validating form...");   
+    if (document.forms["addcourse"]["course"].value == null || document.forms["addcourse"]["course"].value == "") {
+        alert("You must enter a course ID");
+        return false;
+    }
+    if (document.forms["addcourse"]["professor"].value == null || document.forms["addcourse"]["professor"].value == "") {
+        alert("Please enter professor's name");
+        return false;
+    }
+}

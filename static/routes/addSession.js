@@ -16,8 +16,10 @@ exports.view = function(req, res) {
     var howto= req.query.howto;
     var hours = req.query.hours;
     var mins = req.query.mins;
-    hours = hours*60 ;
-    hours = parseInt(hours) + parseInt(mins);
+    var time;
+    if(hours == null || hours == "") time = mins;
+    else if(mins == null || mins == "") time = hours*60;
+    else time = parseInt(hours*60) + parseInt(mins);
     var extra = req.query.extra;
     var phone = req.query.phone;
     if(course != null && course != "") {
@@ -56,14 +58,13 @@ function validateForm() {
         alert("Please give a specific description of how to find you");
         return false;
     }
-    if (document.forms["addsession"]["hours"].value == null || document.forms["addsession"]["hours"].value == "") {
-        alert("Please enter number of hours");
+    if ((document.forms["addsession"]["hours"].value == null || document.forms["addsession"]["hours"].value == "") 
+        && (document.forms["addsession"]["mins"].value == null || document.forms["addsession"]["mins"].value == ""))
+    {
+        alert("Please enter a time duration");
         return false;
     }
-    if (document.forms["addsession"]["mins"].value == null || document.forms["addsession"]["mins"].value == "") {
-        alert("Please enter number of minutes");
-        return false;
-     }
+     
 
 
 // allow only one session per course

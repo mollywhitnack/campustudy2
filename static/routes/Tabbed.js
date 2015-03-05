@@ -1,5 +1,5 @@
 var data = require("../common/json/data.json");
-var course = require("../common/json/course.json");
+//var course = require("../common/json/course.json");
 
 var t1 = 0;
 var t2 = 0;
@@ -8,24 +8,36 @@ var t4 = 0;
 var t5 = 0;
 
 
+
 exports.view = function(req, res)
-{ 
+{	
+	var random_num = Math.random();	
+
+	// if(random_num > 0.5){	
+		// res.render("TabbedA", data);
+	// }else{
+		res.render("Tabbed", data)
+	//}
 	var tabmatch = null;
-	res.render('Tabbed', data);
+	course1= {};
+	course2 = {};
+	course3= {};
+	course4 = {};
+	course5= {};
+
 	for(var i = 0; i < data.owner.length; i++)
 	{	
-    console.log("------------------------");
-	console.log("ownerlength " + data.owner.length);
-	console.log("------------------------");
 	console.log("owner course " + i + ": "+ data.owner[i].course);
-	console.log("------------------------");
 	  for(var j = 0; j<data.sessions.length; j++)
-	  {	
+	  {	//add matching session to owner's couse
+		//create new container for each course
+		/*data.tab1.push(course1); 
+		data.tab2.push(course2);*/
 		if( data.sessions[j].course == data.owner[i].course)
 		{
-			console.log("--------Match----------------");
-			console.log(data.owner[i].course);
-			console.log("-----------------------------");
+			console.log("session course " + j + ": "+ data.sessions[j].course);
+			 //console.log("owner course: " + data.owner[i].course);
+			 //console.log("Session course :" + data.sessions[j].course);
 			 var tabmatch = 
 		 	 {	
 			 "course": data.sessions[j].course,
@@ -36,7 +48,8 @@ exports.view = function(req, res)
 			 "sessionid": data.sessions[j].sessionid
     		 };
 
-			if(i == 0 && t1 ==0)
+
+		if(i == 0 && t1 ==0)
     	{
     	var n1 = data.course1.length;
     	//data.tab1.push(tabmatch);
@@ -78,11 +91,8 @@ exports.view = function(req, res)
 		}
 
 		//tabmatch = {};
-		//console.log("-----------------");
-		//console.log(tabmatch);
-		//console.log(tabmatch);*/
+
       }
-      //console.log("else no match");
 
   	}
   	
@@ -100,6 +110,8 @@ exports.view = function(req, res)
 
 
 
+
+
 		 //console.log("Session course: "+ data.sessions[j].course);
 		 //console.log("Match to owner course: " + data.owner[i].course);
 		 //console.log("Name: " +data.sessions[j].name);
@@ -108,8 +120,6 @@ exports.view = function(req, res)
 		 console.log("professor: " +data.sessions[j].professor);
 		 courselist1.push(data.sessions[j].name);
 		 console.log("courselist1: " + courselist1);*/
-
-
 /*function sessionList(tcourse, tid, tname, tlocation, ttime, tprof)
 {
 	if (courselist1[0]== undefined || )
@@ -125,9 +135,7 @@ exports.view = function(req, res)
 	console.log("courselist 2: " + courselist2);
 	console.log("courselist1 size: " + courselist1[0]);
 	/*res.render('Tabb=ed',
-	{
-	'dName': data.sessions[i].name
-	});
+	{'dName': data.sessions[i].name});
 }
 /*function initializePage() 
 {
@@ -136,11 +144,7 @@ exports.view = function(req, res)
 }
 function findCourse(sessions)
 {
-	if(course == "cse12")
-	{
-		return course;
-	}
-	else {
-		console.log(course+ " not known for anagramming.");
-	}
+	if(course == "cse12"){return course;}
+	else {console.log(course+ " not known for anagramming.");}
+
 }*/

@@ -11,9 +11,10 @@ exports.view = function(req, res) {
 	// });
     var course = req.query.course;
     var professor = req.query.professor;
-    if(course != null && course != "") {
+    if((course != null && course != "") && courses.owner.length != 5) {
+
     var newCourse = {
-			"course": course,
+            "course": course.toLowerCase().replace(/\s+/g, ''),
 			"professor": professor,	
     };
 
@@ -26,6 +27,7 @@ exports.view = function(req, res) {
 }
 
 function validateForm() {
+
 	console.log("validating form...");   
     if (document.forms["addcourse"]["course"].value == null || document.forms["addcourse"]["course"].value == "") {
         alert("You must enter a course ID");
@@ -35,4 +37,6 @@ function validateForm() {
         alert("Please enter professor's name");
         return false;
     }
+    
 }
+
