@@ -75,11 +75,28 @@ var modalObj = new ModalObj();
 	calendarObj = new CalendarObj();
 
 $(document).ready(function() {
+	$(".version_a_sessions").click(function(event){
+	woopra.track("sessions_click");
+	console.log("click");});
+	
+	$(".version_a_course").click(function(event){
+	woopra.track("courses_click");
+	console.log("click");});
+	
+	$(".version_a_map").click(function(event){
+	woopra.track("map_click");
+	console.log("click");});
+	
+	$(".version_a_help").click(function(event){
+	woopra.track("help_click");
+	console.log("click");});
+	
 	init();
 });
 
 $(document).on('onTemplateReady', function() {
 	init();
+	initializePage();
 });
 
 function init(){
@@ -1078,3 +1095,20 @@ ReportObj.prototype.addLineGraphSelect = function() {
 	output += "</select>";
 	$("#graph-data-select").html(output);
 }
+
+function initializePage(){
+	// $("a.version_B_sessions").click(funcion(){});
+	// $("a.version_B_course").click(funcion(){});
+	// $("a.version_B_help").click(funcion(){});
+	// $("a.version_B_map").click(funcion(){});
+	// $(".mysessions2 .version_A_sessions").click(
+	// function{
+	// woopra.track("sessions_click");
+	// console.log("click");
+	// }
+	// );
+	// $("a.version_A_course").click(funcion(){});
+	// $("a.version_A_help").click(funcion(){});
+	// $("a.version_A_map").click(funcion(){});
+}
+

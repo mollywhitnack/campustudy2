@@ -85,14 +85,6 @@ nav.main-menu h1{
 }
 nav.main-menu a{display:block;position:relative;width:100%;font-size:185%;color:white;text-decoration:none;padding-top:7.5px;padding-bottom:7.5px;border-bottom:1px dotted white}
 nav.main-menu a:last-child{border-bottom:0}section{overflow:hidden;*zoom:1;display:block;position:relative;width:100%;padding:15px;padding-bottom:0}
-a.version_B_sessions{}
-a.version_A_sessions{}
-a.version_B_course{}
-a.version_A_course{}
-a.version_B_help{}
-a.version_A_help{}
-a.version_B_map{}
-a.version_A_map{}
 
 section>.content{display:block;position:relative;float:left;width:100%;padding-left:7.5px;padding-right:7.5px;padding-top:15px;padding-bottom:15px}
 
