@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="common/css/app.min.css">
 <script src="common/js/jQuery2.0.2.min.js"></script>
 <script src="common/js/main.min.js"></script>
+{{> tracking_code_script_google}}
+
 
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -87,7 +89,7 @@ function statusChangeCallback(response) {
         'Thanks for logging in, ' + response.name + '!';
     });
   }
-</script>
+
 
 
 

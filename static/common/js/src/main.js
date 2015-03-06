@@ -168,7 +168,7 @@ ListViewObj.prototype.setupTabbedLists = function() {
 		container = $('ul.tabbed-list-view');
 		panels = container.children("li"),
 		tabs = $('.tabbed-list-view-nav a'),
-		tabWidth = tabs.first().width(),
+		tabWidth = $(window).width()/5,
 		arrow = $(".tabbed-list-view-nav-arrow"),
 		ww = panels.first().width();
 
